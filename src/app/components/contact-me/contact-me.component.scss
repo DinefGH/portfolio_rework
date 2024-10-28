@@ -1,0 +1,205 @@
+input {
+    background-color: rgba(28, 28, 28,); 
+    border-color: rgba(28, 28, 28,);
+}
+
+.contactMeContainer {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.contactMeContainer::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(28, 28, 28,);    
+    z-index: -1;
+}
+
+
+.contactMeMain {
+    position: absolute;
+    top: 96px;
+    display: flex;
+}
+
+
+.contactMeDescriptionContainer {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+
+.contactMeHeadline {
+    font-size: calc(1.175rem + 1.5vw) !important;
+    margin-bottom: 16px;
+}
+
+
+.contactMeSmallHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+
+.contactMeEmailHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.contactMeTextHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.contactMeNameHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contactMeDescription {
+    margin-bottom: 16px;
+}
+
+
+.ContactMeCheckboxTextContainer {
+    display: flex;
+}
+
+
+.contactMePrivacyContainer {
+    display: flex;
+}
+
+
+.contactMeNameContainer {
+    margin-left: 32px;
+}
+
+
+.contactMeEmailContainer {
+    margin-left: 32px;
+}
+
+
+.contactmeLine {
+    border: 1px solid;
+    width: 80%;
+    height: 1px;
+    margin-bottom: 16px;
+}
+
+
+
+.contactMeTextContainer {
+    margin-left: 32px;
+}
+
+
+.contactMeTextContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactMeInputContainer {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.displayColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contactMeNameInput {
+    display: flex;
+    margin-bottom: 16px;
+    
+}
+
+
+.contactMeEmailInput {
+    margin-bottom: 16px;
+
+}
+
+
+.contactMeTextInput {
+    margin-bottom: 16px;
+}
+
+
+.animated-button button .p-button-label {
+    display: inline-block;
+    white-space: nowrap; /* Prevent text from wrapping */
+    will-change: transform; /* Optimize performance for the transform animation */
+  }
+  
+  
+  .animatedButton {
+    margin: 16px;
+      position: relative;
+      overflow: hidden;  /* Hide the text when it moves out of the button */
+      width: 125px;  /* Adjust the button width as per your design */
+      height: 36px;  /* Adjust the button height as per your design */
+      display: flex;  /* Flexbox for centering */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    overflow: hidden;  /* Hide the text when it moves out of the button */
+    background-color: rgba(0, 0, 0, 0);  /* Example button background color */
+    color: white;  /* Example button text color */
+  
+    cursor: pointer;
+  
+    border: 1px solid;
+    border-radius: 2rem;
+    transition: color 0.5s ease, border-color 0.5s ease,;  /* Smooth transitions for color and border */
+  
+  
+  
+      p {
+          display: inline-block;
+          white-space: nowrap;
+          transform: translateX(0);  /* Start in the middle */
+          animation: none;  /* No animation by default */
+      }
+    
+      &:hover p {
+        animation: slide-text 5s linear infinite;  /* Trigger the animation on hover */
+  
+  
+      }
+    }
+    
+  
+  
+    @keyframes slide-text {
+      0% {
+        transform: translateX(0);  /* Start from the center */
+      }
+      50% {
+        transform: translateX(-200%);  /* Move off-screen to the left */
+      }
+      50.1% {
+        transform: translateX(200%);  /* Jump to the right off-screen immediately after leaving left */
+      }
+      100% {
+          transform: translateX(0);  /* Move back to the center */
+        }
+    }
