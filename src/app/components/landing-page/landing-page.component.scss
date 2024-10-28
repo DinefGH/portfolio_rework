@@ -1,0 +1,248 @@
+.landingPageContainer {
+  position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.landingPageContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(198deg, rgba(10, 41, 36, 0.8) -2%, rgb(28, 28, 28) 59%) !important;
+    z-index: -1;
+  }
+
+
+
+
+
+.hero {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+  font-size: calc(1.175rem + 11.5vw) !important;
+    font-weight: bold;
+    width: 99vw;
+}
+
+.subtitle {
+  font-size: calc(1.175rem + 5.5vw) !important;
+    margin-bottom: 2rem;
+    width: 99vw;
+}
+
+
+.landingButtonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* Scroll hint */
+.scroll-hint {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #00ffa3;
+}
+
+.bannerContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.3);
+  height: 40px;
+  transform: rotate(358deg);  
+  transform-origin: center; 
+  position: absolute;
+  bottom: 5vh;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slideBanner {
+  display: inline-flex;  
+  white-space: nowrap;  /* Prevent the text from wrapping */
+  animation: slide-banner 8s linear infinite; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes slide-banner {
+  0% {
+    transform: translateX(0);  /* Start at normal position */
+  }
+  100% {
+    transform: translateX(-100%);  /* Move all the way left */
+  }
+}
+
+
+
+
+
+.point {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  display: block;
+  background-color: #00ffa3;
+  margin-left: 32px;
+  margin-right: 32px;
+  border: 2px solid;
+}
+
+.animated-button button .p-button-label {
+  display: inline-block;
+  white-space: nowrap; /* Prevent text from wrapping */
+  will-change: transform; /* Optimize performance for the transform animation */
+}
+
+
+.animatedButton {
+  margin: 16px;
+    position: relative;
+    overflow: hidden;  /* Hide the text when it moves out of the button */
+    width: 125px;  /* Adjust the button width as per your design */
+    height: 36px;  /* Adjust the button height as per your design */
+    display: flex;  /* Flexbox for centering */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;  /* Center vertically */
+  overflow: hidden;  /* Hide the text when it moves out of the button */
+  background-color: rgba(0, 0, 0, 0);  /* Example button background color */
+  color: white;  /* Example button text color */
+
+  cursor: pointer;
+
+  border: 1px solid;
+  border-radius: 2rem;
+  transition: color 0.5s ease, border-color 0.5s ease,;  /* Smooth transitions for color and border */
+
+
+
+    p {
+        display: inline-block;
+        white-space: nowrap;
+        transform: translateX(0);  /* Start in the middle */
+        animation: none;  /* No animation by default */
+    }
+  
+    &:hover p {
+      animation: slide-text 5s linear infinite;  /* Trigger the animation on hover */
+
+
+    }
+  }
+  
+
+
+  @keyframes slide-text {
+    0% {
+      transform: translateX(0);  /* Start from the center */
+    }
+    50% {
+      transform: translateX(-200%);  /* Move off-screen to the left */
+    }
+    50.1% {
+      transform: translateX(200%);  /* Jump to the right off-screen immediately after leaving left */
+    }
+    100% {
+        transform: translateX(0);  /* Move back to the center */
+      }
+  }
+  
+
+  .email {
+    transform: rotate(270deg); 
+    transform-origin: center; 
+    position: absolute;
+    bottom: 60vh;
+    right: 16px;
+    right: -36px;
+  }
+
+
+.arrowContainer {
+  border: 1px solid;
+  width: 60px; 
+  height: 36px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(270deg); 
+  transform-origin: center; 
+  position: absolute;
+  bottom: 33vh;
+  left: 35px;
+  
+}
+
+.arrow {
+  transform: rotate(90deg); 
+  transform-origin: center; 
+  animation: arrowUpDown 2s ease-in-out infinite;
+}
+
+
+
+@keyframes arrowUpDown {
+  50%, 100% {
+    transform: translateX(16x) rotate(90deg);
+  }
+  50% {
+    transform: translateX(-8px) rotate(90deg);
+  }
+}
+  
+  .strightLineLeft {
+    border-right: 2px solid;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    left: 64px;
+    z-index: 1;
+  }
+
+  .github {
+    position: absolute;
+    bottom: 42vh;
+    right: 54px;
+  }
+
+
+
+  .linkedIn {
+    position: absolute;
+    bottom: 35vh;
+    right: 54px;
+  }
+
+  .strightLineRight {
+    border-right: 2px solid;
+    height: 30vh;
+    position: absolute;
+    bottom: 0;
+    right: 64px;
+    z-index: 1;
+  }
+
+ 

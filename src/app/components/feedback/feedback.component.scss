@@ -1,0 +1,87 @@
+.feedbackContainer {
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 50vh;
+    overflow: hidden;
+}
+
+
+.feedbackContainer::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(28, 28, 28,);    
+    z-index: -1;
+}
+
+
+.feedbackMainContainer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.feedbackHeadline {
+    font-size: calc(1.175rem + 1.2vw) !important;
+    margin-bottom: 32px;
+}
+
+
+.feedbackContent {
+    width: min(860px, 50vw);
+    height: 260px;
+    border: 1px solid;
+    border-radius: 2rem;
+    margin: 32px;
+    background: linear-gradient(45deg, #2c413c 50%, #39514d 100%);
+}
+
+
+.feedbackContentContainer {
+    display: flex;
+
+}
+
+
+.feedbackSwitcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+.feedbackSwitcherPoint {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: block;
+    background-color: #00ffa3;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: 2px solid;
+  }
+
+
+.feedbackSwitcherLeft {
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+
+.feedbackSwitcherRight {
+    margin-left: 32px;
+    cursor: pointer;
+}

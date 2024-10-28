@@ -1,0 +1,220 @@
+.portfolioContainer {
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(28, 28, 28,);
+    box-shadow: 0 29px 63px 163px rgba(28, 28, 28, 1);
+    position: relative;
+}
+
+
+.portfolioMainContainer {
+    position: relative;
+    top: 64px;
+    left: 64px;
+    width: fit-content;
+}
+
+
+.smallHeadlinePortfolio {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+
+.headlinePortfolio {
+font-size: calc(1.175rem + 1.5vw) !important;
+margin-bottom: 32px;
+}
+
+
+.descriptionPortfolio {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+
+.portfolioTechnologies {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    align-items: center;
+}
+
+
+
+.portfolioTechnologiesJoin {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 55vw;
+    align-items: center;
+}
+
+
+.portfolioTechnologiesJoin:hover .portfolioNameArrow {
+    display: block;
+}
+
+.portfolioTechnologies:hover .portfolioNameArrow {
+    display: block;
+}
+
+
+.portfolioTechnologies:hover .projectContainer {
+    display: block;
+}
+
+
+
+.portfolioNameArrowContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+.portfolioNameArrow {
+    padding-left: 8px;
+    height: 12px;
+    display: none;
+}
+
+
+.backgroundTheme:hover{
+    background-color: none;
+    color: black;
+}
+
+.videoName {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+.videoTechnologies {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+
+.joinName {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+.joinTechnologies {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+
+.elPolloName {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+.elPolloTechnologies {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+
+.rightLine {
+    border-right: 2px solid;
+    width: fit-content;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.lp {
+    padding-left: 4px;
+}
+
+
+.photoProject {
+    position: relative;
+    border-radius: 2rem;
+    width: min(460px, 30vw);
+    height: 260px;
+    z-index: 10;
+}
+
+
+.projectContainerElPollo {
+    position: absolute;
+    top: 342px;
+    right: 64px;
+    z-index: 2;
+}
+
+
+.projectContainerJoin {
+    position: absolute;
+    top: 250px;
+    right: 64px;
+    z-index: 2;
+}
+
+
+.projectContainerVideoportfolio {
+    position: absolute;
+    top: 156px;
+    right: 64px;
+    z-index: 2;
+}
+
+
+
+.portfolioProjectsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.diagonalBox {
+    position: absolute;
+    top: 24px;
+    left: 24px; 
+    width: min(460px, 30vw);
+    height: 260px;
+    background-color: rgba(28, 28, 28,);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    background: repeating-linear-gradient(
+        225deg, /* Adjust angle to make lines diagonal */
+        #faf9fa, /* Line color */
+        #ece7ed, /* Line width */
+        transparent 2px, /* Spacing between lines */
+        transparent 20px /* Adjust for more/less spacing */
+    );
+}
+
+
+
+.diagonalBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3; /* Adjust opacity for softer effect */
+    z-index: 2;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        225deg, /* Adjust angle to make lines diagonal */
+        transparent 2px, /* Spacing between lines */
+        transparent 20px /* Adjust for more/less spacing */
+    );
+}

@@ -1,0 +1,141 @@
+.headerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:10vh;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.headerLogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.toogleLG {
+    border-radius: 50% !important;
+}
+
+
+.headerContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: min(300px, 50vw);
+}
+
+
+.theme-switcher {
+  position: relative;
+  display: inline-block;
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .dropdown {
+    position: relative;
+
+    .dropdown-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      right: 0;  /* Align the dropdown to the left */
+      left: auto;  /* Ensure it does not float to the right */
+      background-color: rgba(56, 56, 56, 1);
+      min-width: 96px;
+      border: 1px solid ;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1;
+
+      &.show {
+        display: block;
+      }
+
+      .theme-options {
+        display: grid;
+        grid-template-columns: repeat(3, 20px);  /* Create a grid with 5 buttons per row */
+        gap: 8px;
+      }
+
+      .theme-button {
+        width: 20px;
+        height: 10px;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+
+        &.selected {
+          border-color: #ffffff;
+        }
+
+        &:hover {
+          border-color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+  .languagesContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownLanguage {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: rgba(56, 56, 56, 1);
+    width: 45px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 12px;
+  }
+  
+  
+  .flagIcon:hover {
+    box-shadow: 0px 0px 10px 10px #39514d;
+    background-color: #39514d;
+    cursor: pointer;
+  }
+  
+  
+  .dropdownLanguage svg {
+    cursor: pointer;
+  }
+  
+  /* Show dropdown when active */
+  .show {
+    display: block;
+  }

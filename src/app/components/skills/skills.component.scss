@@ -1,0 +1,239 @@
+
+.skillsContainer {
+    position: relative;
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      height: 100vh;
+      overflow: hidden;
+  }
+  
+  
+  .skillsContainer::before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(100deg, rgba(10, 41, 36, 0.8) -2%, rgb(28, 28, 28) 59%) !important;
+      z-index: -1;
+    }
+  
+
+
+.technologies {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+
+.photo {
+    height: 660px;
+    width: min(660px, 35vw);
+}
+
+.aboutImgShadowContainer {
+    position: absolute;
+    top: 64px;
+    left: 128px; 
+    z-index: 10;
+}
+
+
+.aboutMeImgContainer {
+    width: fit-content;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #2c413c 50%, #39514d 100%) !important;
+    z-index: 10;
+}
+
+
+
+
+.aboutImgShadowContainer:hover  .diagonal-box {
+    transform: translate(-64px, 64px);
+}
+
+
+
+
+.aboutMeImgContainer img {
+    display: block;
+    border-radius: 20px;
+}
+
+.technologiesSkillContainer {
+    position: absolute;
+    top: 64px;
+    left: 64px; 
+    width: min(660px, 35vw);
+    z-index: 10;
+}
+
+
+.meContainer {
+    height: fit-content;
+    width: min(660px, 35vw);
+    border: 1px solid;
+    border-radius: 2rem;
+    padding: 32px;
+    background: linear-gradient(45deg, #2c413c 50%, #39514d 100%);
+}
+
+.aboutMeHeadline {
+    font-size: calc(1.175rem + 1.5vw) !important;
+    margin-bottom: 32px;
+}
+
+
+.iconTextContainer {
+    display: flex;
+    align-items: center;
+}
+
+
+.skillText {
+margin-bottom: 16px;
+}
+
+
+.secondSmallHeadline {
+    display: flex;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+.iconAbout {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+
+.iconsFrontend {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    display: grid;
+    height: fit-content;
+    width: min(660px, 35vw);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+    justify-items: center; 
+    align-items: center; 
+    z-index: 10;
+}
+  
+.iconsFrontend div {
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 24px; 
+}
+  
+
+.iconsBackend {
+    position: absolute;
+    bottom: 64px;
+    right: 64px;
+    display: grid;
+    height: fit-content;
+    width: min(660px, 35vw);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+    justify-items: center;
+    align-items: center; 
+}
+
+  
+.iconsBackend div {
+    border-radius: 10px; 
+    padding: 20px; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: 24px; 
+}
+
+
+
+.dNone {
+    display: none;
+}
+
+
+.themeFillLogoHo{
+    Fill: #ffffff;
+
+}
+
+
+.iconHover {
+    color: #ffffff!important;
+  }
+  
+
+
+  .animated-button button .p-button-label {
+    display: inline-block;
+    white-space: nowrap; 
+    will-change: transform; 
+  }
+  
+  
+  .animatedButton {
+    margin: 16px 16px 16px 0px;
+      position: relative;
+      overflow: hidden; 
+      width: 125px;  
+      height: 36px; 
+      display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    overflow: hidden;  
+    background-color: rgba(0, 0, 0, 0);  
+    color: white;  
+  
+    cursor: pointer;
+  
+    border: 1px solid;
+    border-radius: 2rem;
+    transition: color 0.5s ease, border-color 0.5s ease,;  
+  
+  
+  
+      p {
+          display: inline-block;
+          white-space: nowrap;
+          transform: translateX(0);  
+          animation: none;  
+      }
+    
+      &:hover p {
+        animation: slide-text 5s linear infinite;  
+  
+  
+      }
+    }
+    
+  
+  
+    @keyframes slide-text {
+      0% {
+        transform: translateX(0);  
+      }
+      50% {
+        transform: translateX(-200%);  
+      }
+      50.1% {
+        transform: translateX(200%);  
+      }
+      100% {
+          transform: translateX(0);  
+        }
+    }
