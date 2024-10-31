@@ -5,7 +5,7 @@
     <div class="contactMeHeadline themeColorFont"><b>Let´s work together</b></div>
     <div class="contactMeSmallHeadline themeColorFont"><b>Got a problem to solve?</b></div>
     <div class="contactMeDescription"> Contact me trough this form, 
-        I am interested inhearing from you, 
+        I am interested in hearing from you, 
         knowing your ideas and contributing to your projects with my work.
     </div>
         <div class="contactMeTalkConatiner">
@@ -20,16 +20,16 @@
                 <div class="contactMeNameHeadline themeColorFont">What´s your name?</div>
                 <div class="contactMeNameInput">
                     <div class="flex displayColumn flex-column gap-2">
-                        <label for="username">Name</label>
+                        <label for="name">Name</label>
                         <input 
                         placeholder="Enter your Name"
                             type="text"
                             pInputText 
-                            id="username" 
-                            aria-describedby="username-help" 
-                            [(ngModel)]="value" />
-                        <small id="username-help" *ngIf="!nameEntered">
-                            Enter your username to reset your password.
+                            id="name" 
+                            aria-describedby="name-help" 
+                            [(ngModel)]="valueName" />
+                        <small id="name-help" *ngIf="!nameEntered">
+                            Enter your Name.
                         </small>
                     </div>
                 </div>
@@ -37,22 +37,43 @@
             <div class="contactmeLine themeBorderColor"></div>
             <div class="contactMeEmailContainer">
                 <div class="contactMeEmailHeadline themeColorFont">What´s your email?</div>
-                <div class="contactMeEmailInput ng-invalid"><p-floatLabel>
-                    <input  type="email"  pInputText id="email" [(ngModel)]="value" />
-                    <label  for="email">Email</label>
-                </p-floatLabel>
+                <div class="contactMeEmailInput">
+                    <div class="flex displayColumn flex-column gap-2">
+                        <label for="email">Email</label>
+                        <input 
+                        placeholder="Enter your email"
+                            type="text"
+                            pInputText 
+                            id="email" 
+                            aria-describedby="email-help" 
+                            [(ngModel)]="valueEmail" />
+                        <small id="email-help" *ngIf="!nameEntered">
+                            Enter your email.
+                        </small>
+                    </div>
                 </div>
             </div>
             <div class="contactmeLine themeBorderColor"></div>
             <div class="contactMeTextContainer">
                 <div class="contactMeTextHeadline themeColorFont">How can i help you?</div>
-                <div class="contactMeTextInput"><p-floatLabel>
-                    <input pInputText id="text" [(ngModel)]="value" />
-                    <label for="text">Text</label>
-                </p-floatLabel>
+                <div class="contactMeTextInput">
+                    <div class="flex displayColumn flex-column gap-2 themeBorderColor">
+                        <label for="message">Message</label>
+                        <textarea 
+                        placeholder="Enter your message"
+                            variant="filled"
+                            rows="5"
+                            cols="30" 
+                            pInputTextarea 
+                            [(ngModel)]="valueMessage">
+                        </textarea>
+                        <small id="message-help" *ngIf="!nameEntered">
+                            Enter your message.
+                        </small>
+                    </div>
                 </div>
             </div>
-            <div class="contactmeLine"></div>
+            <div class="contactmeLine themeBorderColor"></div>
             <div>
                 <div class="ContactMeCheckboxTextContainer">
                 <div class="contactMeCheckbox">
@@ -68,7 +89,7 @@
                 </div>
             </div>
         </div>
-            <div>
+            <div class="contactMeButtonContainer">
                 <button  class="animatedButton themeColorButton"><p>Say Hello ;)</p></button>
             </div>
 

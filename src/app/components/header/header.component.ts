@@ -4,6 +4,7 @@ import { ReplaceDashPipe } from '../../pipes/replace-dash.pipe'; // Import the c
 import { FormsModule } from '@angular/forms'; // Import FormsModule for ngModel
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
+import { TranslateModule, TranslateService } from '@ngx-translate/core'; // Import TranslateService
 
 
 @Component({
@@ -13,6 +14,7 @@ import { ButtonModule } from 'primeng/button';
     FormsModule, 
     CommonModule,
     ButtonModule,
+    TranslateModule
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
@@ -80,7 +82,9 @@ export class HeaderComponent {
   dropdownOpen: boolean = false;
   dropdownVisible:  boolean = false;
 
-  constructor(private serviceThemeService: ServiceThemeService) {}
+  constructor(private serviceThemeService: ServiceThemeService,
+    private translate: TranslateService 
+  ) {}
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -92,8 +96,11 @@ export class HeaderComponent {
 
   selectLanguage(lang: string) {
     this.dropdownVisible = false;
+    this.translate.use(lang); // Switch the language
+
     console.log('Selected language:', lang);
-    
+    this.dropdownVisible = true;
+    console.log('visible:', this.dropdownVisible);
   }
 
 

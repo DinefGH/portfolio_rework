@@ -3,7 +3,7 @@
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    height: 50vh;
+    height: 65vh;
     overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     background-color: rgba(28, 28, 28,);    
     z-index: -1;
 }
@@ -22,7 +22,7 @@
 
 .feedbackMainContainer {
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -31,7 +31,6 @@
     inset -5px 0 5px -5px rgba(0, 0, 0, 0.3),
     inset 5px 0 5px -5px rgba(0, 0, 0, 0.3);
 }
-
 
 
 
@@ -122,8 +121,11 @@
     transform: scale(1.1);
     background-color: #d1e7dd;
     z-index: 1;
+    transition: transform 0.3s ease;
   }
   
+
+
   /* Styles for previous and next items */
   .previousFeedback,
   .nextFeedback {

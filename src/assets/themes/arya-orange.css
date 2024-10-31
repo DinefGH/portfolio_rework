@@ -12,11 +12,25 @@
   }
 
 
+.headerLinks {
+  cursor: pointer;
+}
+
+
+  .themeColorFontHover:hover {
+    color: #FFD54F;
+  }
+
+  
+  .themeColorFontHover:hover .linkPoints{
+    border-color: #FFD54F !important;
+  }
+
   .themeBorderColor {
     border-color: #FFD54F !important;
   }
 
-  
+
   .fabianLogoColorTheme {
     stop-color: #FFD54F !important;
   }
@@ -25,7 +39,7 @@
   .fabianLogoColorFillTheme {
     fill: #FFD54F !important;
   }
-    
+
 
   .themeFillLogo {
     Fill: #FFD54F;
@@ -84,11 +98,12 @@
             transparent 20px /* Adjust for more/less spacing */
             ) !important;
           }
-  
+
 
       .backgroundTheme:hover {
         background-color: #ffe284d4;
       }
+
 
       .themeBackground {
         background-color: #ffe284d4;

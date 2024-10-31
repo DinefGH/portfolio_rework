@@ -4,7 +4,7 @@
       background-size: cover;
       background-attachment: fixed;
       color: white;
-      height: 100vh;
+      height: 80vh;
       overflow: hidden;
   }
   
@@ -15,7 +15,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100vh;
+      height: 80vh;
       background: linear-gradient(100deg, rgba(10, 41, 36, 0.8) -2%, rgb(28, 28, 28) 59%) !important;
       z-index: -1;
     }
@@ -119,10 +119,9 @@ margin-bottom: 16px;
     right: 64px;
     display: grid;
     height: fit-content;
-    width: min(660px, 35vw);
+    width: min(660px, 45vw);
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
     gap: 20px; 
-    padding: 20px; 
     justify-items: center; 
     align-items: center; 
     z-index: 10;
@@ -130,7 +129,7 @@ margin-bottom: 16px;
   
 .iconsFrontend div {
     border-radius: 10px; 
-    padding: 20px; 
+    padding: 4px; 
     text-align: center; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     font-size: 24px; 

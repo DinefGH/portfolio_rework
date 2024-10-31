@@ -9,6 +9,7 @@
     background-color: rgba(28, 28, 28,);
     box-shadow: 0 29px 63px 163px rgba(28, 28, 28, 1);}
 
+
 .aboutMeMainContainer {
     position: relative;
     display: flex;
@@ -27,8 +28,9 @@
 .photo {
     height: 660px;
     width: min(660px, 35vw);
-    object-fit: cover;
+    object-fit: contain;
 }
+
 
 .aboutImgShadowContainer {
     position: absolute;
@@ -46,19 +48,16 @@
 }
 
 
-
-
 .aboutImgShadowContainer:hover  .diagonal-box {
     transform: translate(-64px, 64px);
 }
-
-
 
 
 .aboutMeImgContainer img {
     display: block;
     border-radius: 20px;
 }
+
 
 .aboutMeWhoContainer {
     position: absolute;
@@ -77,6 +76,7 @@
     padding: 32px;
     background: linear-gradient(45deg, #2c413c 50%, #39514d 100%);
 }
+
 
 .aboutMeHeadline {
     font-size: calc(1.175rem + 1.5vw) !important;
@@ -99,7 +99,7 @@
 }
 
 
-      .diagonal-box {
+    .diagonal-box {
         position: absolute;
         top: 0px;
         left: 0px; 
