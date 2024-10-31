@@ -5,9 +5,22 @@
         "Projects": "Projekte"
     },
 
-    "fghfh": {
+    "LANDING": {
+        "CheckWork": "Meine Arbeit",
+        "ContactMe": "Kontaktiere mich",
+        "OpenWork": "Offen für Arbeit",
+        "BasedIn": "Wohnsitz in Kempten"
+    },
+
+
+    "ABOUTME": {
+        "WhoIAm": "Wer ich bin",
         "About": "Über mich",
-        "Skills": "Fähigkeiten",
-        "Projects": "Projekte"
+        "AboutText": "diam nonumy eirmod temhgjfghjgjgfjgfjfgjgjg,duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, ",
+        "Location": "sdf sdfsfsf sdfsddfaa asdfasf sdfaf  fgfhghg hgdfhfdghduo dolores et ea rebum. Stet clita kasd gubergren",
+        "Minded": "sed diam voluptua. At vero eos et accusam et justo",
+        "Profession": "sed diam voluptua. At vero eos et accusam et justo"
+
     }
 }
+

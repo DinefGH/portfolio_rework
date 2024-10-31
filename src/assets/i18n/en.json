@@ -3,5 +3,24 @@
         "About": "About me",
         "Skills": "Skills",
         "Projects": "Projects"
-      }
+      },
+
+      "LANDING": {
+        "CheckWork": "Check my work",
+        "ContactMe": "Contact me",
+        "OpenWork": "Open to work",
+        "BasedIn": "Based in Kempten"
+    },
+
+    "ABOUTME": {
+        "WhoIAm": "Who I Am",
+        "About": "About Me",
+        "AboutText": "diam nonumy eirmod temhgjfghjgjgfjgfjfgjgjg,duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, ",
+        "Location": "sdf sdfsfsf sdfsddfaa asdfasf sdfaf  fgfhghg hgdfhfdghduo dolores et ea rebum. Stet clita kasd gubergren",
+        "Minded": "sed diam voluptua. At vero eos et accusam et justo",
+        "Profession": "sed diam voluptua. At vero eos et accusam et justo"
+
+    }
+
+
   }

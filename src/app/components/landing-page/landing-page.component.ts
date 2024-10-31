@@ -1,10 +1,13 @@
 import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
+import { TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
+
+
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [ButtonModule],
+  imports: [ButtonModule,TranslateModule, ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
