@@ -15,12 +15,63 @@
     "ABOUTME": {
         "WhoIAm": "Who I Am",
         "About": "About Me",
-        "AboutText": "diam nonumy eirmod temhgjfghjgjgfjgfjfgjgjg,duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, ",
-        "Location": "sdf sdfsfsf sdfsddfaa asdfasf sdfaf  fgfhghg hgdfhfdghduo dolores et ea rebum. Stet clita kasd gubergren",
-        "Minded": "sed diam voluptua. At vero eos et accusam et justo",
-        "Profession": "sed diam voluptua. At vero eos et accusam et justo"
+        "AboutText": "I'm a German-speaking Fullstack Developer based in Kempten, passionate about creating engaging and intuitive digital experiences. With a strong foundation in frontend development using Angular and JavaScript, as well as backend expertise in Python and Django, I specialize in creating visually appealing and user-friendly applications and websites.",
+        "Location": "I am flexible in my working environment and can work effectively both on-site in Kempten or remotely.",
+        "Minded": "My passion for technology and continuous learning drives me to take on diverse projects and challenges, helping me grow into a dedicated and skilled developer.",
+        "Profession": "In my profession, programming is more than just writing code—it's a creative approach to problem-solving. I take pride in my ability to break down complex technical challenges into simple, user-friendly solutions that bring ideas to life."
+    },
 
-    }
 
+    "SKILLS": {
+      "Tech": "Technologies",
+      "SkillSet": "Skill Set",
+      "SkillText": "My journey as a Fullstack Developer has been shaped by a range of diverse projects and continuous learning. With experience in over 15 projects, I bring expertise in frontend technologies like Angular and JavaScript, along with backend skills in Python and Django. Driven by a passion for technology, I am always open to embracing new technologies and methodologies to enhance my skills and stay current in the evolving landscape of web development.",
+      "Another": "You need",
+      "AnotherSkillset": "another skill?",
+      "Contact": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+      "ContactMe": "Contact me"
+  },
+
+
+  "PORTFOLIO": {
+      "Projects": "Featured Projects",
+      "ExploreProjects": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+
+
+  "FEEDBACK": {
+      "Colleagues": "What my colleagues say about me",
+      "Feedback1": "In difficult situations, Mr Dürr was characterised by a very quick and always found good solutions.",
+      "Feedback2": "Mr Dürr always coped well with high workloads and acted calmly and purposefully. He worked very efficiently and purposefully.",
+      "Feedback3": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+
+
+    "CONTACTME": {
+      "ContactMe": "Contact me",
+      "Work": "Let´s work together",
+      "Problem": "Got a problem to solve?",
+      "ContactForm": "Contact me trough this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+      "NeedFullstack": "Need a Fullstack Developer?",
+      "Talk": "Let´s talk!"
+  },
+
+
+  "CONTACTFORM": {
+    "WhatName": "What´s your name?",
+    "Name": "Name",
+    "EnterName": "Enter your Name",
+    "WhatEmail": "What´s your email?",
+    "Email": "Email",
+    "EnterEmail": "Enter your email",
+    "WhatMessage": "How can i help you?",
+    "Message": "Message",
+    "EnterMessage": "Enter your message",
+    "Read": "I´ve read the",
+    "Policy": "privacy policy",
+    "Agree": "and agree to the processing of my data as outlined",
+    "Hello": "Say Hello ;)"
+  }
+    
 
   }

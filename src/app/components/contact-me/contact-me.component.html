@@ -1,28 +1,27 @@
 <div class="contactMeContainer">
     <main class="contactMeMain">
         <div class="contactMeDescriptionContainer">
-    <div class="contactMeSmallHeadline themeColorFont"><b>Contact me</b></div>
-    <div class="contactMeHeadline themeColorFont"><b>Let´s work together</b></div>
-    <div class="contactMeSmallHeadline themeColorFont"><b>Got a problem to solve?</b></div>
-    <div class="contactMeDescription"> Contact me trough this form, 
-        I am interested in hearing from you, 
-        knowing your ideas and contributing to your projects with my work.
+    <div class="contactMeSmallHeadline themeColorFont"><b>{{ 'CONTACTME.ContactMe' | translate }}</b></div>
+    <div class="contactMeHeadline themeColorFont"><b>{{ 'CONTACTME.Work' | translate }}</b></div>
+    <div class="contactMeSmallHeadline themeColorFont"><b>{{ 'CONTACTME.Problem' | translate }}</b></div>
+    <div class="contactMeDescription"> 
+        {{ 'CONTACTME.ContactForm' | translate }}
     </div>
         <div class="contactMeTalkConatiner">
-            <span class="contactMeNeed">Need a Fullstack Developer?</span>
-            <span class="contactMeTalk themeColorFont">&nbsp;Let´s talk!</span>
+            <span class="contactMeNeed">{{ 'CONTACTME.NeedFullstack' | translate }}</span>
+            <span class="contactMeTalk themeColorFont">&nbsp;{{ 'CONTACTME.Talk' | translate }}</span>
         </div>
         </div>
 
         <div class="contactMeInputContainer">
             <div class="contactmeLine themeBorderColor"></div>
             <div  class="contactMeNameContainer">
-                <div class="contactMeNameHeadline themeColorFont">What´s your name?</div>
+                <div class="contactMeNameHeadline themeColorFont">{{ 'CONTACTFORM.WhatName' | translate }}</div>
                 <div class="contactMeNameInput">
                     <div class="flex displayColumn flex-column gap-2">
-                        <label for="name">Name</label>
+                        <label for="name">{{ 'CONTACTFORM.Name' | translate }}</label>
                         <input 
-                        placeholder="Enter your Name"
+                        placeholder="{{ 'CONTACTFORM.EnterName' | translate }}"
                             type="text"
                             pInputText 
                             id="name" 
@@ -36,12 +35,12 @@
             </div>
             <div class="contactmeLine themeBorderColor"></div>
             <div class="contactMeEmailContainer">
-                <div class="contactMeEmailHeadline themeColorFont">What´s your email?</div>
+                <div class="contactMeEmailHeadline themeColorFont">{{ 'CONTACTFORM.WhatEmail' | translate }}</div>
                 <div class="contactMeEmailInput">
                     <div class="flex displayColumn flex-column gap-2">
-                        <label for="email">Email</label>
+                        <label for="email">{{ 'CONTACTFORM.Email' | translate }}</label>
                         <input 
-                        placeholder="Enter your email"
+                        placeholder="{{ 'CONTACTFORM.EnterEmail' | translate }}"
                             type="text"
                             pInputText 
                             id="email" 
@@ -55,12 +54,12 @@
             </div>
             <div class="contactmeLine themeBorderColor"></div>
             <div class="contactMeTextContainer">
-                <div class="contactMeTextHeadline themeColorFont">How can i help you?</div>
+                <div class="contactMeTextHeadline themeColorFont">{{ 'CONTACTFORM.WhatMessage' | translate }}</div>
                 <div class="contactMeTextInput">
                     <div class="flex displayColumn flex-column gap-2 themeBorderColor">
-                        <label for="message">Message</label>
+                        <label for="message">{{ 'CONTACTFORM.Message' | translate }}</label>
                         <textarea 
-                        placeholder="Enter your message"
+                        placeholder="{{ 'CONTACTFORM.EnterMessage' | translate }}"
                             variant="filled"
                             rows="5"
                             cols="30" 
@@ -83,14 +82,14 @@
     inputId="binary" />
                 </div>
                 <div class="contactMePrivacyContainer">
-                    <div class="contactMeText">&nbsp;I´ve read the</div>
-                    <div class="contactMeTextPrivacy themeColorFont">&nbsp;privacy policy</div>
-                    <div class="contactMeTextData">&nbsp;and agree to the processing of my data as outlined</div>
+                    <div class="contactMeText">&nbsp;{{ 'CONTACTFORM.Read' | translate }}</div>
+                    <div class="contactMeTextPrivacy themeColorFont">&nbsp;{{ 'CONTACTFORM.Policy' | translate }}</div>
+                    <div class="contactMeTextData">&nbsp;{{ 'CONTACTFORM.Agree' | translate }}</div>
                 </div>
             </div>
         </div>
             <div class="contactMeButtonContainer">
-                <button  class="animatedButton themeColorButton"><p>Say Hello ;)</p></button>
+                <button  class="animatedButton themeColorButton"><p>{{ 'CONTACTFORM.Hello' | translate }}</p></button>
             </div>
 
 

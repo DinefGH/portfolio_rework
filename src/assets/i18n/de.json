@@ -7,7 +7,7 @@
 
     "LANDING": {
         "CheckWork": "Meine Arbeit",
-        "ContactMe": "Kontaktiere mich",
+        "ContactMe": "Kontakt",
         "OpenWork": "Offen für Arbeit",
         "BasedIn": "Wohnsitz in Kempten"
     },
@@ -16,11 +16,64 @@
     "ABOUTME": {
         "WhoIAm": "Wer ich bin",
         "About": "Über mich",
-        "AboutText": "diam nonumy eirmod temhgjfghjgjgfjgfjfgjgjg,duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, duo dolores et ea rebum. Stet clita kasd gubergren, ",
-        "Location": "sdf sdfsfsf sdfsddfaa asdfasf sdfaf  fgfhghg hgdfhfdghduo dolores et ea rebum. Stet clita kasd gubergren",
-        "Minded": "sed diam voluptua. At vero eos et accusam et justo",
-        "Profession": "sed diam voluptua. At vero eos et accusam et justo"
+        "AboutText": "Ich bin ein deutschsprachiger Fullstack-Developer aus Kempten. Als technikbegeisterter Mensch liebe ich es, stets Neues zu lernen und mich weiterzuentwickeln.Durch vielfältige Projekte, stetige Herausforderungen und Durchhaltevermögen konnte ich mich zu einem guten Developer entwickeln.",
+        "Location": "Ich bin in meinem Arbeitsumfeld flexibel und kann sowohl vor Ort in Kempten als auch Remote arbeiten",
+        "Minded": "Meine Leidenschaft für Technologie und ständiges Lernen treibt mich an, verschiedene Projekte und Herausforderungen anzunehmen und mich zu einem engagierten und kompetenten Entwickler zu entwickeln.",
+        "Profession": "Die Tätigkeit des Programmierens umfasst mehr als nur das Schreiben von Code. Sie beinhaltet auch die kreative Lösung von Problemen. Es begeistert mich, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln, die Ideen zum Leben erwecken."
+    },
 
+
+    "SKILLS": {
+        "Tech": "Technologien",
+        "SkillSet": "Fertigkeiten",
+        "SkillText": "Mein Weg als Fullstack-Entwickler war geprägt von einer Reihe unterschiedlicher Projekte und kontinuierlichem Lernen. Mit Erfahrung aus über 15 Projekten bringe ich Expertise in Frontend-Technologien wie Angular und JavaScript sowie Backend-Kenntnisse in Python und Django mit. Angetrieben von meiner Leidenschaft für Technologie, bin ich immer offen für neue Technologien und Methoden, um meine Fähigkeiten zu verbessern und in der sich entwickelnden Landschaft der Webentwicklung auf dem Laufenden zu bleiben.",
+        "Another": "Sie brauchen",
+        "AnotherSkillset": "andere Fertigkeiten?",
+        "Contact": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+        "ContactMe": "Kontakt"
+    },
+
+
+    "PORTFOLIO": {
+        "Projects": "Ausgewählte Projekte",
+        "ExploreProjects": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+
+
+    "FEEDBACK": {
+        "Colleagues": "Was meine Kollegen über mich sagen",
+        "Feedback1": "In schwierigen Situationen zeichnete Herr Dürr sich durch eine sehr schnelle Auffassungsgabe aus und fand stets gute Lösungen.",
+        "Feedback2": "Hohe Belastungen bewältigte Herr Dürr stets gut und agierte dabei ruhig und zielorientiert. Er arbeitete sehr effizient und zielstrebig.",
+        "Feedback3": "Lorem Ipsum dolor sit amet, consectetur adipis"
+
+    },
+
+
+    "CONTACTME": {
+        "ContactMe": "Kontakt",
+        "Work": "Lassen Sie uns zusammenarbeiten",
+        "Problem": "Haben Sie ein Problem zu lösen?",
+        "ContactForm": "Nehmen Sie über dieses Formular Kontakt mit mir auf. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "NeedFullstack": "Brauchen Sie einen Fullstack-Developer?",
+        "Talk": "Lassen Sie uns reden!"
+    },
+
+
+    "CONTACTFORM": {
+    "WhatName": "Wie ist Ihr Name?",
+    "Name": "Name",
+    "EnterName": "Name eingeben",
+    "WhatEmail": "Wie ist Ihre Email?",
+    "Email": "Email",
+    "EnterEmail": "Email eingeben",
+    "WhatMessage": "Wie kann ich Ihnen helfen?",
+    "Message": "Nachricht",
+    "EnterMessage": "Nachricht eingeben",
+    "Read": "Ich habe die",
+    "Policy": "Datenschutzrichtlinie",
+    "Agree": "zur Kenntnis genommen und erkläre mich mit der darin beschriebenen Verarbeitung meiner Daten einverstanden.",
+    "Hello": "Senden!"
     }
+    
 }
 

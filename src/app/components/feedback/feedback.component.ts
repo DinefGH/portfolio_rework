@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
+
+
+interface Feedback {
+  content: string;
+  author: string;
+}
 
 @Component({
   selector: 'app-feedback',
   standalone: true,
-  imports: [NgFor, NgClass, NgStyle, NgIf],
+  imports: [NgFor, NgClass, NgStyle, NgIf, TranslateModule],
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.scss'],
   animations: [
@@ -22,14 +29,26 @@ import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
   ],
 })
 export class FeedbackComponent {
-  feedbacks = [
-    { content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita officiis similique doloribus laboriosam illo rem tempora minus,", author: "Max Mustermann" },
-    { content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita officiis similique doloribus laboriosam illo rem tempora minus,", author: "Jane Doe" },
-    { content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita officiis similique doloribus laboriosam illo rem tempora minus,", author: "John Smith" },
- 
-  ];
+  feedbacks: Feedback[] = []; 
 
   animationIndex = 0;
+
+
+  constructor(private translate: TranslateService) {}
+
+
+  ngOnInit(): void {
+    this.updateFeedbacks();
+
+    // Update feedbacks on language change
+    this.translate.onLangChange.subscribe(() => {
+      this.updateFeedbacks();
+    });
+  }
+  
+
+
+  
 
   // Helper modulo function to handle negative numbers
   private mod(n: number, m: number): number {
@@ -80,5 +99,14 @@ export class FeedbackComponent {
         this.animationIndex--;
       }
     }
+  }
+
+
+  updateFeedbacks() {
+    this.feedbacks = [
+      { content: this.translate.instant('FEEDBACK.Feedback1'), author: "Former Employer" },
+      { content: this.translate.instant('FEEDBACK.Feedback2'), author: "Former Employer" },
+      { content: this.translate.instant('FEEDBACK.Feedback3'), author: "Group member" },
+    ];
   }
 }
