@@ -73,6 +73,13 @@
     "Policy": "Datenschutzrichtlinie",
     "Agree": "zur Kenntnis genommen und erkläre mich mit der darin beschriebenen Verarbeitung meiner Daten einverstanden.",
     "Hello": "Senden!"
+    },
+
+
+    "FOOTER": {
+    "Germany": "Kempten Deutschland",
+    "Legal": "Datenschutz",
+    "Imprint": "Impressum"
     }
     
 }

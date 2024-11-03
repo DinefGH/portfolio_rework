@@ -71,6 +71,13 @@
     "Policy": "privacy policy",
     "Agree": "and agree to the processing of my data as outlined",
     "Hello": "Say Hello ;)"
+  },
+
+
+  "FOOTER": {
+  "Germany": "Kempten Germany",
+  "Legal": "Legal Notice",
+  "Imprint": "Imprint"
   }
     
 
