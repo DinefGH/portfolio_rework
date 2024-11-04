@@ -14,8 +14,13 @@
 
 .headerLinks {
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
+.headerLinks.active {
+  color: #FFD54F;
+}
 
   .themeColorFontHover:hover {
     color: #FFD54F;

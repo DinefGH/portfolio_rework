@@ -1,4 +1,4 @@
-<div class="contactMeContainer">
+<div class="contactMeContainer" id="contactMe">
     <main class="contactMeMain">
         <div class="contactMeDescriptionContainer">
     <div class="contactMeSmallHeadline themeColorFont"><b>{{ 'CONTACTME.ContactMe' | translate }}</b></div>
@@ -15,6 +15,8 @@
 
         <div class="contactMeInputContainer">
             <div class="contactmeLine themeBorderColor"></div>
+
+            <form #contactForm="ngForm" (ngSubmit)="sendMail(contactForm)" novalidate>
             <div  class="contactMeNameContainer">
                 <div class="contactMeNameHeadline themeColorFont">{{ 'CONTACTFORM.WhatName' | translate }}</div>
                 <div class="contactMeNameInput">
@@ -26,10 +28,15 @@
                             pInputText 
                             id="name" 
                             aria-describedby="name-help" 
-                            [(ngModel)]="valueName" />
-                        <small id="name-help" *ngIf="!nameEntered">
-                            Enter your Name.
-                        </small>
+                            [(ngModel)]="valueName" 
+                            name="name"
+                            #nameModel="ngModel"
+                            required
+                            autocomplete="name" 
+                            />
+                            <small id="name-help" *ngIf="nameModel.invalid && (nameModel.dirty || nameModel.touched)" class="error-text">
+                                <span class="errorSmall" *ngIf="nameModel.errors?.['required']">{{ 'CONTACTFORM.ErrorName' | translate }}</span>
+                            </small>
                     </div>
                 </div>
             </div>
@@ -41,14 +48,21 @@
                         <label for="email">{{ 'CONTACTFORM.Email' | translate }}</label>
                         <input 
                         placeholder="{{ 'CONTACTFORM.EnterEmail' | translate }}"
-                            type="text"
+                            type="email"
                             pInputText 
                             id="email" 
                             aria-describedby="email-help" 
-                            [(ngModel)]="valueEmail" />
-                        <small id="email-help" *ngIf="!nameEntered">
-                            Enter your email.
-                        </small>
+                            [(ngModel)]="valueEmail" 
+                            name="email"
+                            #emailModel="ngModel"
+                            required
+                            email
+                            autocomplete="email" 
+                            />
+                            <small id="email-help" *ngIf="emailModel.invalid && (emailModel.dirty || emailModel.touched)" class="error-text">
+                                <span class="errorSmall"  *ngIf="emailModel.errors?.['required']">{{ 'CONTACTFORM.ErrorEmail' | translate }}</span>
+                                <span class="errorSmall"  *ngIf="emailModel.errors?.['email']">{{ 'CONTACTFORM.ErrorEmailValid' | translate }}</span>
+                              </small>
                     </div>
                 </div>
             </div>
@@ -64,10 +78,15 @@
                             rows="5"
                             cols="30" 
                             pInputTextarea 
-                            [(ngModel)]="valueMessage">
+                            [(ngModel)]="valueMessage"
+                            name="message"
+                            #messageModel="ngModel"
+                            required
+                            >
+                            
                         </textarea>
-                        <small id="message-help" *ngIf="!nameEntered">
-                            Enter your message.
+                        <small id="message-help" *ngIf="messageModel.invalid && (messageModel.dirty || messageModel.touched)" class="error-text">
+                            <span class="errorSmall"  *ngIf="messageModel.errors?.['required']">{{ 'CONTACTFORM.ErrorText' | translate }}</span>
                         </small>
                     </div>
                 </div>
@@ -77,9 +96,15 @@
                 <div class="ContactMeCheckboxTextContainer">
                 <div class="contactMeCheckbox">
                     <p-checkbox 
-    [(ngModel)]="checkedPrivacy" 
-    [binary]="true" 
-    inputId="binary" />
+                    [(ngModel)]="checkedPrivacy" 
+                    [binary]="true" 
+                    name="privacy"
+                    #privacyModel="ngModel"
+                    inputId="binary"
+    />
+    <small *ngIf="!checkedPrivacy && (privacyModel.dirty || privacyModel.touched)" class="error-text">
+        <span  class="errorSmall" >{{ 'CONTACTFORM.ErrorPivacy' | translate }}</span>
+      </small>
                 </div>
                 <div class="contactMePrivacyContainer">
                     <div class="contactMeText">&nbsp;{{ 'CONTACTFORM.Read' | translate }}</div>
@@ -89,10 +114,13 @@
             </div>
         </div>
             <div class="contactMeButtonContainer">
-                <button  class="animatedButton themeColorButton"><p>{{ 'CONTACTFORM.Hello' | translate }}</p></button>
+                <button        type="submit"
+                class="animatedButton themeColorButton"
+                [disabled]="contactForm.invalid || !checkedPrivacy">
+                    <p>{{ 'CONTACTFORM.Hello' | translate }}</p></button>
             </div>
 
-
+        </form>
         </div>
     </main>
 </div>

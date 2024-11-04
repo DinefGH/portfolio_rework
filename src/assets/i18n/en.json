@@ -2,7 +2,8 @@
     "HEADER": {
         "About": "About me",
         "Skills": "Skills",
-        "Projects": "Projects"
+        "Projects": "Projects",
+        "Contact": "Contact"
       },
 
       "LANDING": {
@@ -70,7 +71,12 @@
     "Read": "I´ve read the",
     "Policy": "privacy policy",
     "Agree": "and agree to the processing of my data as outlined",
-    "Hello": "Say Hello ;)"
+    "Hello": "Say Hello ;)",
+    "ErrorName": "Please enter your name!",
+    "ErrorEmail": "Email is required!",
+    "ErrorEmailValid": "Please enter a valid email address!",
+    "ErrorText": "Please enter your message!",
+    "ErrorPivacy": "You must agree to the privacy policy."
   },
 
 

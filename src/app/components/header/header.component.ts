@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule for ngModel
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { TranslateModule, TranslateService } from '@ngx-translate/core'; // Import TranslateService
+import { SectionService } from '../../services/section.service';
 
 
 @Component({
@@ -77,14 +78,22 @@ export class HeaderComponent {
     'rhea'
   ];
 
- 
+  activeSection: string = '';
   selectedTheme: string = 'luna-green';
   dropdownOpen: boolean = false;
   dropdownVisible:  boolean = false;
 
   constructor(private serviceThemeService: ServiceThemeService,
-    private translate: TranslateService 
+    private translate: TranslateService,
+    private sectionService: SectionService
+
   ) {}
+
+  ngOnInit() {
+    this.sectionService.activeSection$.subscribe((sectionId) => {
+      this.activeSection = sectionId;
+    });
+  }
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;

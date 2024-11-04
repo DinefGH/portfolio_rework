@@ -215,3 +215,13 @@ input, textarea {
           transform: translateX(0);  /* Move back to the center */
         }
     }
+
+
+.errorSmall {
+    color: #ff5757;
+}
+
+
+button:disabled {
+    cursor: no-drop;
+  }

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
+import { SectionService } from '../../services/section.service';
 
 
 
@@ -11,7 +12,30 @@ import { TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
+export class PortfolioComponent  implements OnInit {
+
+
+
+  constructor(
+    private elementRef: ElementRef,
+    private sectionService: SectionService
+  ) {}
+
+  ngOnInit() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.sectionService.setActiveSection('portfolio');
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    observer.observe(this.elementRef.nativeElement.querySelector('#portfolio'));
+  }
+
   isHovered = false;
 
   isHoveredVideo = false;

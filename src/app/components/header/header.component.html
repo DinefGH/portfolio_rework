@@ -7,11 +7,50 @@
 
 
   <div class="headerContentContainer">
-<div class="headerLinks themeColorFontHover">{{ 'HEADER.About' | translate }}</div>
+<div class="headerLinks themeColorFontHover">
+  <a
+  href="#about"
+  class="headerLinks  themeColorFontHover"
+  [class.active]="activeSection === 'about'"
+>
+  {{ 'HEADER.About' | translate }}
+</a>
+</div>
 
 
-<div class="headerLinks themeColorFontHover">{{ 'HEADER.Skills' | translate }}</div>
-<div class="headerLinks themeColorFontHover">{{ 'HEADER.Projects' | translate }}</div>
+<div class="headerLinks themeColorFontHover">
+  <a
+  href="#skills"
+  class="headerLinks  themeColorFontHover"
+  [class.active]="activeSection === 'skills'"
+>
+  {{ 'HEADER.Skills' | translate }}
+</a>
+</div>
+
+
+
+<div class="headerLinks themeColorFontHover">
+  <a
+  href="#portfolio"
+  class="headerLinks  themeColorFontHover"
+  [class.active]="activeSection === 'portfolio'"
+>
+  {{ 'HEADER.Projects' | translate }}
+</a>
+</div>
+
+
+
+<div class="headerLinks themeColorFontHover">
+  <a
+  href="#contactMe"
+  class="headerLinks  themeColorFontHover"
+  [class.active]="activeSection === 'contactMe'"
+>
+  {{ 'HEADER.Contact' | translate }}
+</a>
+</div>
 
 
 <div class="languagesContainer">

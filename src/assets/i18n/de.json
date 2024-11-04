@@ -2,7 +2,8 @@
     "HEADER": {
         "About": "Über mich",
         "Skills": "Fähigkeiten",
-        "Projects": "Projekte"
+        "Projects": "Projekte",
+        "Contact": "Kontakt"
     },
 
     "LANDING": {
@@ -72,7 +73,12 @@
     "Read": "Ich habe die",
     "Policy": "Datenschutzrichtlinie",
     "Agree": "zur Kenntnis genommen und erkläre mich mit der darin beschriebenen Verarbeitung meiner Daten einverstanden.",
-    "Hello": "Senden!"
+    "Hello": "Senden!",
+    "ErrorName": "Bitte geben Sie ihren Namen ein!",
+    "ErrorEmail": "Bitte geben Sie eine Email ein!",
+    "ErrorEmailValid": "Bitte geben Sie eine gültige Email ein!",
+    "ErrorText": "Bitte geben Sie ihre Nachricht ein!",
+    "ErrorPivacy": "Sie müssen die Datenschutzrichtlinien akzeptieren"
     },
 
 
