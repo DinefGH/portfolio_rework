@@ -23,7 +23,7 @@ import { SectionService } from '../../services/section.service';
 export class HeaderComponent {
 
 
-
+  isActive: boolean = true;
 
 
   checked: boolean = false;
@@ -112,13 +112,23 @@ export class HeaderComponent {
     console.log('visible:', this.dropdownVisible);
   }
 
+  toggleClassClose() {
+    this.isActive = !this.isActive;
+    console.log(this.isActive)
+  }
+
+
+  toggleClassOpen() {
+    this.isActive = !this.isActive;
+    console.log(this.isActive)
+  }
 
 
   changeTheme(theme: string) {
     this.selectedTheme = theme;
     this.serviceThemeService.switchTheme(theme);
     console.log('Current theme:', this.serviceThemeService.getCurrentTheme());
-    this.dropdownOpen = false;  // Close dropdown after selecting a theme
+    this.dropdownOpen = false;
   }
 
   getThemeColor(theme: string): string {
@@ -171,6 +181,6 @@ export class HeaderComponent {
       'luna-pink': '#E91E63',
       'rhea': '#795548'
     };
-    return themeColors[theme] || '#ffffff'; // Default color if theme is not found
+    return themeColors[theme] || '#ffffff'; 
   }
 }

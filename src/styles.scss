@@ -53,16 +53,9 @@
   body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   html {scroll-behavior: smooth;}
 
-  
+
 .dNone {
-  display: none;
+  display: none !important;
 }
 
 
-  @media (min-width: 2200px) { 
-    body {
-      margin-left: max(160px, 10vw);
-      margin-right: max(160px, 10vw);
-      margin-top: 10vh;
-    }
-  }

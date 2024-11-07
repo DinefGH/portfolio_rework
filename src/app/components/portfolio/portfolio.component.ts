@@ -55,4 +55,35 @@ export class PortfolioComponent  implements OnInit {
   onHoverJoin(state: boolean) {
     this.isHoveredJoin = state;
   }
+
+
+
+  openLiveTestVideo(): void {
+    window.open("https://videoflix.fabianduerr.com/", "_blank");
+  }
+
+
+  openGitHubVideo(): void {
+    window.open("https://github.com/DinefGH/videoflix_angular", "_blank");
+  }
+
+
+  openLiveTestJoin(): void {
+    window.open("https://join.fabianduerr.com/", "_blank");
+  }
+
+
+  openGitHubJoin(): void {
+    window.open("https://github.com/DinefGH/join_angular", "_blank");
+  }
+
+  
+  openLiveTestElPollo(): void {
+    window.open("https://elpolloloco.fabianduerr.com/", "_blank");
+  }
+
+
+  openGitHubElPollo(): void {
+    window.open("https://github.com/DinefGH/El-Pollo-Loco", "_blank");
+  }
 }

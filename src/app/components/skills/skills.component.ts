@@ -1,20 +1,31 @@
-import { Component, OnInit, ElementRef  } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
+import { Component, OnInit, ElementRef, AfterViewInit, Inject, PLATFORM_ID  }   from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core'; 
 import { SectionService } from '../../services/section.service';
+import { isPlatformBrowser } from '@angular/common';
+import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [TranslateModule, ],
+  imports: [TranslateModule, NgIf,],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
+
+
+
 export class SkillsComponent implements OnInit {
+
+  frontendActive: boolean = true;
+  backendActive: boolean = false;
+
 
   constructor(
     private elementRef: ElementRef,
-    private sectionService: SectionService
+    private sectionService: SectionService,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   ngOnInit() {
@@ -30,5 +41,31 @@ export class SkillsComponent implements OnInit {
     );
 
     observer.observe(this.elementRef.nativeElement.querySelector('#skills'));
+  }
+
+  scrollToContact() {
+    if (isPlatformBrowser(this.platformId)) {
+      // Use setTimeout to ensure the event loop has time to render other components
+      setTimeout(() => {
+        const contactMeSection = document.getElementById('contactMe');
+        if (contactMeSection) {
+          contactMeSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.warn('contactMe section not found');
+        }
+      }, 0);
+    }
+  }
+
+
+
+  changeToFrontend() {
+    this.backendActive = false;
+    this.frontendActive = true;
+  }
+
+  changeToBackend() {
+    this.backendActive = true;
+    this.frontendActive = false;
   }
 }

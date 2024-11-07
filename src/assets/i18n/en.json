@@ -36,7 +36,10 @@
 
   "PORTFOLIO": {
       "Projects": "Featured Projects",
-      "ExploreProjects": "Explore a selection of my work here - Interact with projects to see my skills in action."
+      "ExploreProjects": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+      "VideoPortfolio": "Videoportfolio is a video platform for the clear presentation of projects. Videogular serves as a video player. Jasmine and Cypress were used for testing. Tools for documenting the front end and back end were also used. PostgreSQL acts as a reliable database solution in the background.",
+      "Join": "Join is a Kanban-based project management tool with functions such as login and registration, a contact book and the option to create tasks. Jasmine and Cypress were used for testing. Tools for documenting the front end and back end were also used. SQLite acts as a reliable database solution in the background.",
+      "ElPolloLoco": " A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
   },
 
 

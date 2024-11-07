@@ -1,5 +1,5 @@
 .portfolioContainer {
-    height: 70vh;
+    height: 120vh;
     width: 100%;
     background-color: rgba(28, 28, 28,);
     box-shadow: 0 29px 63px 163px rgba(28, 28, 28, 1);
@@ -41,6 +41,7 @@ margin-bottom: 32px;
     justify-content: space-between;
     width: 55vw;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -51,6 +52,7 @@ margin-bottom: 32px;
     justify-content: space-between;
     width: 55vw;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -149,7 +151,7 @@ margin-bottom: 32px;
 
 .projectContainerElPollo {
     position: absolute;
-    top: 342px;
+    top: 542px;
     right: 64px;
     z-index: 2;
 }
@@ -157,7 +159,7 @@ margin-bottom: 32px;
 
 .projectContainerJoin {
     position: absolute;
-    top: 250px;
+    top: 350px;
     right: 64px;
     z-index: 2;
 }
@@ -217,4 +219,163 @@ margin-bottom: 32px;
         transparent 2px, /* Spacing between lines */
         transparent 20px /* Adjust for more/less spacing */
     );
+}
+
+.projectContainerElPolloMobile {
+display: none;
+}
+
+
+.projectContainerVideoportfolioMobile {
+    display: none;
+
+}
+    .projectContainerJoinMobile {
+        display: none;
+
+    }
+
+
+
+    .portfolioNameTechnologiesContainer {
+        display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+
+    .projectDescription {
+        margin-top: 16px;
+        color: #fff;
+    }
+
+
+    .portfolioButtonContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+    .animated-button button .p-button-label {
+        display: inline-block;
+        white-space: nowrap; /* Prevent text from wrapping */
+        will-change: transform; /* Optimize performance for the transform animation */
+    }
+      
+      
+      .animatedButton {
+        margin: 16px;
+        position: relative;
+          overflow: hidden;  /* Hide the text when it moves out of the button */
+          width: 125px;  /* Adjust the button width as per your design */
+          height: 36px;  /* Adjust the button height as per your design */
+          display: flex;  /* Flexbox for centering */
+        justify-content: center;  /* Center horizontally */
+        align-items: center;  /* Center vertically */
+        overflow: hidden;  /* Hide the text when it moves out of the button */
+        background-color: rgba(0, 0, 0, 0);  /* Example button background color */
+        color: white;  /* Example button text color */
+        cursor: pointer;
+        border: 1px solid;
+        border-radius: 2rem;
+        transition: color 0.5s ease, border-color 0.5s ease,;  /* Smooth transitions for color and border */
+      
+      
+      
+          p {
+              display: inline-block;
+              white-space: nowrap;
+              transform: translateX(0);  /* Start in the middle */
+              animation: none;  /* No animation by default */
+          }
+        
+          &:hover p {
+            animation: slide-text 5s linear infinite;  /* Trigger the animation on hover */
+      
+      
+          }
+        }
+        
+      
+      
+        @keyframes slide-text {
+          0% {
+            transform: translateX(0);  /* Start from the center */
+          }
+          50% {
+            transform: translateX(-200%);  /* Move off-screen to the left */
+          }
+          50.1% {
+            transform: translateX(200%);  /* Jump to the right off-screen immediately after leaving left */
+          }
+          100% {
+              transform: translateX(0);  /* Move back to the center */
+            }
+        }
+
+
+
+@media only screen and (max-width: 1100px) { 
+
+    
+    .portfolioContainer {
+        height: min(2106px, 581vw);
+    }
+
+
+    .portfolioMainContainer {
+        left: 0px; 
+    }
+
+
+
+    .portfolioTechnologies {
+        width: 100vw;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .portfolioTechnologiesJoin {
+        width: 100vw;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+
+.portfolioNameTechnologiesContainer {
+    flex-direction: column;
+}
+
+
+.photoProject {
+    width: min(460px, 100vw);
+}
+
+
+.projectContainerElPolloMobile {
+display: block;
+}
+
+
+.diagonalBox {
+    width: min(460px, 100vw);
+    left: 0px;
+}
+
+
+
+.projectContainerVideoportfolioMobile {
+    display: block;
+}
+
+
+.projectContainerJoinMobile {
+    display: block;
+}
+
+.mobileProject {
+    display: none
+}
 }

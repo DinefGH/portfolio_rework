@@ -143,3 +143,102 @@
     background: repeating-linear-gradient(
     );
 }
+
+
+
+
+@media only screen and (max-width: 800px) { 
+
+    .photo {
+        height: 30vh;
+    }
+
+
+    .diagonal-box {
+        height: 30vh;
+    }
+
+
+
+    .aboutMeWhoContainer {
+        right: auto;
+        width: min(660px, 95vw);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 35vh;
+
+}
+
+.meContainer {
+    width: min(660px, 95vw);
+}
+
+
+.aboutImgShadowContainer {
+    top: 0px;
+}
+
+
+.aboutMeMainContainer {
+
+    justify-content: center;
+}
+
+
+.aboutMeContainer {
+    height: min(1032px, 337vw);
+}
+
+
+}
+
+
+
+// @media only screen and (max-width: 800px) and (max-height: 1000px) { 
+//     .aboutMeContainer {
+//         height: 110vh;
+//     }
+
+// }
+
+
+// @media only screen and (max-width: 800px) and (max-height: 900px) { 
+//     .aboutMeContainer {
+//         height: 120vh;
+//     }
+
+// }
+
+
+// @media only screen and (max-width: 800px) and (max-height: 800px) { 
+//     .aboutMeContainer {
+//         height: 130vh;
+//     }
+
+// }
+
+
+
+// @media only screen and (max-width: 800px) and (max-height: 700px) { 
+//     .aboutMeContainer {
+//         height: 140vh;
+//     }
+
+// }
+
+
+// @media only screen and (max-width: 800px) and (max-height: 600px) { 
+//     .aboutMeContainer {
+//         height: 170vh;
+//     }
+
+// }
+
+
+// @media only screen and (max-width: 800px) and (max-height: 500px) { 
+//     .aboutMeContainer {
+//         height: 200vh;
+//     }
+
+// }

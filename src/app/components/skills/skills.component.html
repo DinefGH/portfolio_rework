@@ -22,12 +22,12 @@
             {{ 'SKILLS.Contact' | translate }}
         </div>
 
-        <button  class="animatedButton themeColorButton"><p>{{ 'SKILLS.ContactMe' | translate }}</p></button>
+        <button (click)="scrollToContact()" class="animatedButton themeColorButton"><p>{{ 'SKILLS.ContactMe' | translate }}</p></button>
     </div>
     
         </article>
 
-        <div class="iconsFrontend">
+        <div class="iconsFrontend" *ngIf="frontendActive">
             <div class="iconHover"><svg class="themeFillLogoHo" width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="themeFillLogoHo" d="M26.04 0L52.08 9.296L48.1096 43.764L26.04 56L3.9704 43.764L0 9.296L26.04 0ZM26.04 6.188L9.7608 42.728H15.8312L19.1044 34.552H32.9196L36.1956 42.728H42.2632L26.04 6.188ZM30.7944 29.512H21.2856L26.04 18.06L30.7944 29.512Z" fill="white"/>
                 </svg>
@@ -117,11 +117,25 @@
                 </svg>
                 <div class="themeColorFont">Growth mindset</div>
             </div>
+
+
+            <div class="iconHover" (click)="changeToBackend()"><svg class="themeFillLogoHo changeLogo" width="60" height="60"  id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.04 122.88"><path d="M16.08,59.26A8,8,0,0,1,0,59.26a59,59,0,0,1,97.13-45V8a8,8,0,1,1,16.08,0V33.35a8,8,0,0,1-8,8L80.82,43.62a8,8,0,1,1-1.44-15.95l8-.73A43,43,0,0,0,16.08,59.26Zm22.77,19.6a8,8,0,0,1,1.44,16l-10.08.91A42.95,42.95,0,0,0,102,63.86a8,8,0,0,1,16.08,0A59,59,0,0,1,22.3,110v4.18a8,8,0,0,1-16.08,0V89.14h0a8,8,0,0,1,7.29-8l25.31-2.3Z"/></svg>
+
+                <div>Backend</div>
+            </div>
         </div>
 
 
 
-        <div class="iconsBackend dNone">
+
+
+
+
+
+
+
+
+        <div class="iconsBackend" *ngIf="backendActive">
 <div class="iconHover"><svg class="themeFillLogoHo" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path class="themeFillLogoHo" fill-rule="evenodd" clip-rule="evenodd" d="M36.9238 2H27.7546V15.8406C26.3857 15.4901 25.2529 15.373 23.7659 15.373C14.1836 15.373 8 21.3816 8 30.6399C8 40.2489 13.8296 45.252 25.0287 45.2638C28.7696 45.2638 32.2272 44.9142 36.9238 44.0258V2ZM24.9841 22.9466C26.117 22.9466 27.002 23.0634 28.0759 23.4142V37.9924C26.766 38.1678 25.9399 38.2249 24.9252 38.2249C20.2286 38.2249 17.6677 35.5598 17.6677 30.733C17.6677 25.7754 20.3464 22.9466 24.9841 22.9466Z" fill="white"/>
     <path class="themeFillLogoHo" d="M51.9192 37.5431V16.5015H42.7617V34.4101C42.7617 42.3124 42.3486 45.3168 41.0389 47.9107C39.7879 50.4473 37.829 52.1095 33.7814 53.9905L42.2897 58C46.3374 55.9883 48.2963 54.1669 49.7833 51.2785C51.3764 48.2742 51.9192 44.7894 51.9192 37.5431Z" fill="white"/>
@@ -229,6 +243,13 @@
     </defs>
     </svg>
     <div  class="themeColorFont">Growth mindset</div>
+</div>
+
+
+
+<div class="iconHover" (click)="changeToFrontend()"><svg  class="themeFillLogoHo changeLogo"  width="60" height="60"   id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.04 122.88"><path d="M16.08,59.26A8,8,0,0,1,0,59.26a59,59,0,0,1,97.13-45V8a8,8,0,1,1,16.08,0V33.35a8,8,0,0,1-8,8L80.82,43.62a8,8,0,1,1-1.44-15.95l8-.73A43,43,0,0,0,16.08,59.26Zm22.77,19.6a8,8,0,0,1,1.44,16l-10.08.91A42.95,42.95,0,0,0,102,63.86a8,8,0,0,1,16.08,0A59,59,0,0,1,22.3,110v4.18a8,8,0,0,1-16.08,0V89.14h0a8,8,0,0,1,7.29-8l25.31-2.3Z"/></svg>
+
+    <div>Frontend</div>
 </div>
         </div>
     </main>

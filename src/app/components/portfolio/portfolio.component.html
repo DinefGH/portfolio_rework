@@ -9,6 +9,8 @@
         <div>
             <div class="videoContainer">
                 <div class="portfolioTechnologies backgroundTheme themeBorderColor" (mouseenter)="onHoverVideo(true)" (mouseleave)="onHoverVideo(false)">
+                   
+                   <div class="portfolioNameTechnologiesContainer">
                     <div class="portfolioNameArrowContainer">
                 <div class="videoName"><b>Videoportfolio</b></div>
                 <div class="portfolioNameArrow">
@@ -25,11 +27,29 @@
                     <div class="rightLine themeBorderColor">HTML</div>
                     <div class="lp">CSS</div>
                 </div>
+            </div>
+                <article class="projectDescription">
+                    {{ 'PORTFOLIO.VideoPortfolio' | translate }}
                 
+                </article>
+
+
+                <div class="portfolioButtonContainer ">
+                    <button  (click)="openGitHubVideo()"  class="animatedButton themeColorButton"><p>GitHub</p></button>
+                    <button (click)="openLiveTestVideo()"  class="animatedButton themeColorButton"><p>Live Test</p></button>
+                </div>
+                </div>
+
+
+
+                <div class="projectContainerVideoportfolioMobile">
+                    <img class="photoProject"   src="././assets/img/el_pollo_loco_gif.gif" 
+                    alt="Fabian Portfolio"   loading="lazy">
                 </div>
             </div>
             <div class="joinContainer themeBorderColor">
                 <div class="portfolioTechnologiesJoin backgroundTheme themeBorderColor" (mouseenter)="onHoverJoin(true)" (mouseleave)="onHoverJoin(false)">
+                    <div class="portfolioNameTechnologiesContainer">
                     <div class="portfolioNameArrowContainer">
                         <div class="joinName"><b>Join</b></div>
                         <div class="portfolioNameArrow">
@@ -47,12 +67,31 @@
                     <div class="lp">CSS</div>
                     
                 </div>
+            </div>
+
+                <article class="projectDescription">
+                    {{ 'PORTFOLIO.Join' | translate }}
                 
+                </article>
+
+
+
+                <div class="portfolioButtonContainer ">
+                    <button (click)="openGitHubJoin()"  class="animatedButton themeColorButton"><p>GitHub</p></button>
+                    <button  (click)="openLiveTestJoin()" class="animatedButton themeColorButton"><p>Live Test</p></button>
+                </div>
+                </div>
+
+
+                <div class="projectContainerJoinMobile">
+                    <img class="photoProject"   src="././assets/img/join_gif.gif" 
+                    alt="Fabian Portfolio"   loading="lazy">
                 </div>
             </div>
             <div class="portfolioProjectsContainer">
             <div class="elPolloContainer themeBorderColor">
                 <div class="portfolioTechnologies backgroundTheme themeBorderColor"  (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">
+                    <div class="portfolioNameTechnologiesContainer">
                     <div class="portfolioNameArrowContainer">
                 <div class="elPolloName"><b>El Pollo Loco</b></div>
                 <div class="portfolioNameArrow">
@@ -69,6 +108,23 @@
                 </div>
                 </div>
 
+                <article class="projectDescription">
+                    {{ 'PORTFOLIO.ElPolloLoco' | translate }}
+                
+                </article>
+
+
+                <div class="portfolioButtonContainer ">
+                    <button  (click)="openGitHubElPollo()" class="animatedButton themeColorButton"><p>GitHub</p></button>
+                    <button  (click)="openLiveTestElPollo()" class="animatedButton themeColorButton"><p>Live Test</p></button>
+                </div>
+                </div>
+
+
+                <div class="projectContainerElPolloMobile">
+                    <img class="photoProject"   src="././assets/img/el_pollo_loco_gif.gif" 
+                    alt="Fabian Portfolio"   loading="lazy">
+                </div>
             </div>
         </div>
 
@@ -77,21 +133,21 @@
 
     </main>
 
-    <div class="projectContainerElPollo" *ngIf="isHovered">
+    <div class="projectContainerElPollo mobileProject" *ngIf="isHovered">
         <img class="photoProject"   src="././assets/img/el_pollo_loco_gif.gif" 
         alt="Fabian Portfolio"   loading="lazy">
         <div class="diagonalBox"></div>
     </div>
 
 
-    <div class="projectContainerJoin" *ngIf="isHoveredJoin">
+    <div class="projectContainerJoin mobileProject" *ngIf="isHoveredJoin">
         <img class="photoProject"   src="././assets/img/join_gif.gif" 
         alt="Fabian Portfolio"   loading="lazy">
         <div class="diagonalBox"></div>
     </div>
 
 
-    <div class="projectContainerVideoportfolio" *ngIf="isHoveredVideo">
+    <div class="projectContainerVideoportfolio mobileProject" *ngIf="isHoveredVideo">
         <img class="photoProject"   src="././assets/img/el_pollo_loco_gif.gif" 
         alt="Fabian Portfolio"   loading="lazy">
         <div class="diagonalBox"></div>

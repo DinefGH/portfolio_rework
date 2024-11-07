@@ -36,13 +36,13 @@
 }
 
 .title {
-  font-size: calc(1.175rem + 11.5vw) !important;
+  font-size: calc(1.175rem + 7.5vw) !important;
     font-weight: bold;
     width: 99vw;
 }
 
 .subtitle {
-  font-size: calc(1.175rem + 5.5vw) !important;
+  font-size: calc(1.175rem + 2.5vw) !important;
     margin-bottom: 2rem;
     width: 99vw;
 }
@@ -193,7 +193,7 @@
   position: absolute;
   bottom: 33vh;
   left: 35px;
-  
+  cursor: pointer;
 }
 
 .arrow {
@@ -245,4 +245,37 @@
     z-index: 1;
   }
 
- 
+  @media only screen and (max-width: 800px) { 
+    .arrowContainer {
+      left: 0;
+    }
+
+
+
+    .strightLineLeft {
+      left: 30px;
+
+    }
+
+
+    .email {
+      bottom: 63vh;
+      right: -80px;
+    }
+
+
+    .github {
+      right: 10px;
+  }
+
+
+    .linkedIn {
+      right: 10px;
+}
+
+
+
+.strightLineRight {
+  right: 20px;
+}
+}
