@@ -12,7 +12,7 @@ import { SectionService } from '../../services/section.service';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent  implements OnInit {
+export class PortfolioComponent implements OnInit {
 
 
 
@@ -30,7 +30,7 @@ export class PortfolioComponent  implements OnInit {
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 } 
     );
 
     observer.observe(this.elementRef.nativeElement.querySelector('#portfolio'));

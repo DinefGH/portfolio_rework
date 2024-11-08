@@ -55,6 +55,68 @@
 
 
 
+      .headerLinks {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .headerLinks.active {
+        color: #3B82F6;
+      }
+
+      
+      .themeColorFontHover:hover {
+        color: #3B82F6;
+      }
+    
+      
+      .themeColorFontHover:hover .linkPoints{
+        border-color: #3B82F6 !important;
+      }
+    
+
+
+
+      
+  .fabianLogoColorTheme {
+    stop-color: #3B82F6 !important;
+  }
+
+
+  .fabianLogoColorFillTheme {
+    fill: #3B82F6 !important;
+  }
+
+
+  .themeFillLogo {
+    Fill: #3B82F6;
+  }
+
+
+  .iconHover:hover .themeFillLogoHo{
+    Fill: #3B82F6!important;
+}
+
+
+.iconHover:hover {
+  color: #3B82F6!important;
+}
+
+
+
+.themeBackground {
+  background-color: #BFDBFE;
+}
+
+
+.active-point {
+  transform: scale(1.2);
+  background-color: #BFDBFE;
+}
+
+
 
   font-family: "Inter var", sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";

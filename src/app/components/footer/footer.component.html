@@ -15,7 +15,7 @@
 <div class="footerCopyright themeColorFont">© Fabian Dürr 2024</div>
 
 <div class="footerLinkContainer">
-    <div class="linkPointsContainer themeColorFontHover">
+    <div (click)="openGitHub()" class="linkPointsContainer themeColorFontHover">
     <div class="themeColorFontHover">
         <div class="linkPoints"></div>
     </div>
@@ -23,7 +23,7 @@
     </div>
 
 
-<div class="linkPointsContainer themeColorFontHover">
+<div (click)="openLinkedIn()" class="linkPointsContainer themeColorFontHover">
     <div class="themeColorFontHover">
         <div class="linkPoints"></div>
     </div>
@@ -32,7 +32,7 @@
 
 
 
-<div class="linkPointsContainer themeColorFontHover">
+<div (click)="openEmail()" class="linkPointsContainer themeColorFontHover">
     <div class="themeColorFontHover">
         <div class="linkPoints"></div>
     </div>
@@ -41,20 +41,24 @@
 
 
 
-<div class="linkPointsContainer themeColorFontHover">
+<div routerLink="/imprint" class="linkPointsContainer themeColorFontHover">
     <div class="themeColorFontHover">
         <div class="linkPoints"></div>
     </div>
-        <div>{{ 'FOOTER.Legal' | translate }}</div>
+
+    <a class="imprintLinks themeColorFontHover" href="/imprint" target="_blank" rel="noopener noreferrer">{{ 'FOOTER.Legal' | translate }}</a>
+
 
 </div>
 
 
-<div class="linkPointsContainer themeColorFontHover">
+<div (click)="openImprint()" class="linkPointsContainer themeColorFontHover">
     <div class="themeColorFontHover">
         <div class="linkPoints"></div>
     </div>
-        <div>{{ 'FOOTER.Imprint' | translate }}</div>
+    <div>
+    {{ 'FOOTER.Imprint' | translate }}
+</div>
 
 </div>
 </div>

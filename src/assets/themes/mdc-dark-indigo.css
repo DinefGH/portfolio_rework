@@ -54,6 +54,71 @@
         background-color: #d0d7ff;
       }
 
+
+
+      .headerLinks {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .headerLinks.active {
+        color: #9FA8DA;
+      }
+
+      
+      .themeColorFontHover:hover {
+        color: #9FA8DA;
+      }
+    
+      
+      .themeColorFontHover:hover .linkPoints{
+        border-color: #9FA8DA !important;
+      }
+    
+
+
+
+      
+  .fabianLogoColorTheme {
+    stop-color: #9FA8DA !important;
+  }
+
+
+  .fabianLogoColorFillTheme {
+    fill: #9FA8DA !important;
+  }
+
+
+  .themeFillLogo {
+    Fill: #9FA8DA;
+  }
+
+
+  .iconHover:hover .themeFillLogoHo{
+    Fill: #9FA8DA!important;
+}
+
+
+.iconHover:hover {
+  color: #9FA8DA!important;
+}
+
+
+
+.themeBackground {
+  background-color: #d0d7ff;
+}
+
+
+.active-point {
+  transform: scale(1.2);
+  background-color: #d0d7ff;
+}
+
+
+
   font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   --font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica,
       Arial, "Lucida Grande", sans-serif;

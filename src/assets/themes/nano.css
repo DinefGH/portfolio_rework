@@ -53,6 +53,66 @@
         background-color: #90c9f5;
       }
 
+      .headerLinks {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .headerLinks.active {
+        color: #1174c0;
+      }
+
+      
+      .themeColorFontHover:hover {
+        color: #1174c0;
+      }
+    
+      
+      .themeColorFontHover:hover .linkPoints{
+        border-color: #1174c0 !important;
+      }
+    
+
+
+
+      
+  .fabianLogoColorTheme {
+    stop-color: #1174c0 !important;
+  }
+
+
+  .fabianLogoColorFillTheme {
+    fill: #1174c0 !important;
+  }
+
+
+  .themeFillLogo {
+    Fill: #1174c0;
+  }
+
+
+  .iconHover:hover .themeFillLogoHo{
+    Fill: #1174c0!important;
+}
+
+
+.iconHover:hover {
+  color: #1174c0!important;
+}
+
+
+
+.themeBackground {
+  background-color: #90c9f5;
+}
+
+
+.active-point {
+  transform: scale(1.2);
+  background-color: #90c9f5;
+}
 
 
 

@@ -54,6 +54,72 @@
       }
 
 
+
+      .headerLinks {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .headerLinks.active {
+        color: #c298d8;
+      }
+
+      
+      .themeColorFontHover:hover {
+        color: #c298d8;
+      }
+    
+      
+      .themeColorFontHover:hover .linkPoints{
+        border-color: #c298d8 !important;
+      }
+    
+
+
+
+      
+  .fabianLogoColorTheme {
+    stop-color: #c298d8 !important;
+  }
+
+
+  .fabianLogoColorFillTheme {
+    fill: #c298d8 !important;
+  }
+
+
+  .themeFillLogo {
+    Fill: #c298d8;
+  }
+
+
+  .iconHover:hover .themeFillLogoHo{
+    Fill: #c298d8!important;
+}
+
+
+.iconHover:hover {
+  color: #c298d8!important;
+}
+
+
+
+.themeBackground {
+  background-color: #e9bcff;
+}
+
+
+.active-point {
+  transform: scale(1.2);
+  background-color: #e9bcff;
+}
+
+
+
+      
+
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",

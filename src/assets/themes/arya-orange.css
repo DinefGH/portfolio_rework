@@ -117,7 +117,7 @@
 
       .active-point {
         transform: scale(1.2);
-        background-color: #ffe284d4; /* Optional: different color for active */
+        background-color: #ffe284d4; 
       }
 
 

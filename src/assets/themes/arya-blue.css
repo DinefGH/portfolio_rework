@@ -49,10 +49,73 @@
       }
 
 
-      .backgroundTheme:hover {
-        background-color: #93cbf9;
-        color: black;
+
+      .headerLinks {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
       }
+
+
+      .headerLinks.active {
+        color: #64B5F6;
+      }
+
+      
+      .themeColorFontHover:hover {
+        color: #64B5F6;
+      }
+    
+      
+      .themeColorFontHover:hover .linkPoints{
+        border-color: #64B5F6 !important;
+      }
+    
+
+
+
+      
+  .fabianLogoColorTheme {
+    stop-color: #64B5F6 !important;
+  }
+
+
+  .fabianLogoColorFillTheme {
+    fill: #64B5F6 !important;
+  }
+
+
+  .themeFillLogo {
+    Fill: #64B5F6;
+  }
+
+
+  .iconHover:hover .themeFillLogoHo{
+    Fill: #64B5F6!important;
+}
+
+
+.iconHover:hover {
+  color: #64B5F6!important;
+}
+
+
+
+.backgroundTheme:hover {
+  background-color: #93cbf9;
+}
+
+
+.themeBackground {
+  background-color: #93cbf9;
+}
+
+
+.active-point {
+  transform: scale(1.2);
+  background-color: #93cbf9; /* Optional: different color for active */
+}
+
 
 
 

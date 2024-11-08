@@ -55,6 +55,72 @@
       }
 
 
+      .headerLinks {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .headerLinks.active {
+        color: #a78bfa;
+      }
+
+      
+      .themeColorFontHover:hover {
+        color: #a78bfa;
+      }
+    
+      
+      .themeColorFontHover:hover .linkPoints{
+        border-color: #a78bfa !important;
+      }
+    
+
+
+
+      
+  .fabianLogoColorTheme {
+    stop-color: #a78bfa !important;
+  }
+
+
+  .fabianLogoColorFillTheme {
+    fill: #a78bfa !important;
+  }
+
+
+  .themeFillLogo {
+    Fill: #a78bfa;
+  }
+
+
+  .iconHover:hover .themeFillLogoHo{
+    Fill: #a78bfa!important;
+}
+
+
+.iconHover:hover {
+  color: #a78bfa!important;
+}
+
+
+
+.themeBackground {
+  background-color: rgba(167, 139, 250, 0.2);
+}
+
+
+.active-point {
+  transform: scale(1.2);
+  background-color: rgba(167, 139, 250, 0.2);
+}
+
+
+
+
+
+
   font-family: "Inter var", sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   font-variation-settings: normal;

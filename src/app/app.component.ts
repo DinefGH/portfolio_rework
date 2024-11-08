@@ -13,6 +13,11 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FooterComponent } from './components/footer/footer.component';
+import { Router } from '@angular/router';
+import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -31,7 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FeedbackComponent,
     ContactMeComponent,
     FooterComponent,
-    TranslateModule, // Import without forRoot()
+    TranslateModule,
+    NgIf 
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -39,8 +45,9 @@ import { FooterComponent } from './components/footer/footer.component';
 export class AppComponent {
   title = 'portfolio-frontend';
   value: string | undefined;
+  isImprintPage = false;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private router: Router) {
     // Set default language
     this.translate.setDefaultLang('en');
 
@@ -48,5 +55,11 @@ export class AppComponent {
     const browserLang = this.translate.getBrowserLang();
     const langToUse = browserLang?.match(/en|de/) ? browserLang : 'en';
     this.translate.use(langToUse);
+
+    this.router.events.subscribe(() => {
+      this.isImprintPage = this.router.url === '/imprint';
+    });
   }
-}
+  }
+
+

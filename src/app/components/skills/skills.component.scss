@@ -1,11 +1,11 @@
 
 .skillsContainer {
     position: relative;
-      background-size: cover;
-      background-attachment: fixed;
-      color: white;
-      height: 80vh;
-      overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 80vh;
+    overflow: hidden;
   }
   
   
@@ -168,7 +168,6 @@ margin-bottom: 16px;
 
 .themeFillLogoHo{
     Fill: #ffffff;
-
 }
 
 
@@ -176,6 +175,32 @@ margin-bottom: 16px;
     color: #ffffff!important;
 }
 
+
+.growthHover:hover  .interests{
+display: block;
+}
+
+
+.interests {
+    position: absolute;
+    background: linear-gradient(45deg, #2c413c 50%, #39514d 100%);
+    width: 150px;
+    height: 130px;
+    border: 1px solid;
+    border-radius: 2rem;
+    bottom: 80px;
+    display: none;
+}
+
+
+.interestsDescription {
+    font-size: 0.8rem!important;
+}
+
+
+.interestsFont {
+    font-size: 0.8rem;
+}
 
 
 .animated-button button .p-button-label {
@@ -185,53 +210,53 @@ margin-bottom: 16px;
 }
 
 
-  .animatedButton {
+.animatedButton {
     margin: 16px 16px 16px 0px;
-      position: relative;
-      overflow: hidden; 
-      width: 125px;  
-      height: 36px; 
-      display: flex;  
+    position: relative;
+    overflow: hidden; 
+    width: 125px;  
+    height: 36px; 
+    display: flex;  
     justify-content: center;  
     align-items: center;  
     overflow: hidden;  
     background-color: rgba(0, 0, 0, 0);  
     color: white;  
-  
+
     cursor: pointer;
-  
+
     border: 1px solid;
     border-radius: 2rem;
     transition: color 0.5s ease, border-color 0.5s ease,;  
-  
-  
-  
-      p {
-          display: inline-block;
-          white-space: nowrap;
-          transform: translateX(0);  
-          animation: none;  
-      }
+
+    p {
+        display: inline-block;
+        white-space: nowrap;
+        transform: translateX(0);  
+        animation: none;  
+    }
     
-      &:hover p {
+    &:hover p {
         animation: slide-text 5s linear infinite;  
   
   
-      }
+    }
     }
     
 
-
+.cursorPointer {
+    cursor: pointer;
+}
 
     .iconHover {
         display: inline-block;
-        transition: transform 0.3s ease; /* Smooth transition */
+        transition: transform 0.3s ease; 
       }
       
       .iconHover:hover .changeLogo {
         cursor: pointer;
-        transform: rotate(180deg); /* Rotate 180 degrees on hover */
-        transition: transform 0.5s ease; /* Smooth rotation */
+        transform: rotate(180deg); 
+        transition: transform 0.5s ease;
       }
   
   

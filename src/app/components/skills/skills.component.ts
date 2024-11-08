@@ -37,7 +37,7 @@ export class SkillsComponent implements OnInit {
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 } 
     );
 
     observer.observe(this.elementRef.nativeElement.querySelector('#skills'));
@@ -45,7 +45,7 @@ export class SkillsComponent implements OnInit {
 
   scrollToContact() {
     if (isPlatformBrowser(this.platformId)) {
-      // Use setTimeout to ensure the event loop has time to render other components
+    
       setTimeout(() => {
         const contactMeSection = document.getElementById('contactMe');
         if (contactMeSection) {
