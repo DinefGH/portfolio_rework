@@ -37,7 +37,7 @@ import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
     ContactMeComponent,
     FooterComponent,
     TranslateModule,
-    NgIf 
+     NgIf 
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
