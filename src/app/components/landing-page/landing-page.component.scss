@@ -279,3 +279,25 @@
   right: 20px;
 }
 }
+
+@media only screen and (max-width: 370px) { 
+
+  .landingPageContainer {
+    height: 120vh;
+  }
+
+  .landingPageContainer::before {
+    height: 120vh;
+
+  }
+
+
+  .animatedButton {
+    margin: 16px 0px 16px 0px;
+  }
+
+
+  .email {
+    bottom: 70vh;
+}
+}

@@ -77,7 +77,7 @@ input, textarea {
 
 .ContactMeCheckboxTextContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 
@@ -220,8 +220,18 @@ input, textarea {
 
 .errorSmall {
     color: #ff5757;
+    margin-left: 8px;
 }
 
+
+.errorHighlight {
+    flex-direction: column!important;
+}
+
+.errorHighlightPadding {
+    margin-top: 16px;
+    margin-left: 32px;
+}
 
 button:disabled {
     cursor: no-drop;
@@ -281,6 +291,19 @@ button:disabled {
 
     .ContactMeCheckboxTextContainer {
         width: 95vw;
-        flex-direction: column;
+        flex-direction: row;
+    }
+  }
+
+
+  @media only screen and (max-width: 370px) { 
+
+    .contactMeContainer {
+        height: min(1186px, 367vw);
+    }
+
+
+    .contactMeContainer::before  {
+        height: min(1186px, 367vw);
     }
   }

@@ -93,7 +93,8 @@
             </div>
             <div class="contactmeLine themeBorderColor"></div>
             <div>
-                <div class="ContactMeCheckboxTextContainer">
+                <div class="ContactMeCheckboxTextContainer"
+                [ngClass]="{'errorHighlight': !checkedPrivacy && (privacyModel.dirty || privacyModel.touched)}">
                 <div class="contactMeCheckbox">
                     <p-checkbox 
                     [(ngModel)]="checkedPrivacy" 
@@ -106,7 +107,8 @@
         <span  class="errorSmall" >{{ 'CONTACTFORM.ErrorPivacy' | translate }}</span>
       </small>
                 </div>
-                <div class="contactMePrivacyContainer">
+                <div class="contactMePrivacyContainer"
+                [ngClass]="{'errorHighlightPadding': !checkedPrivacy && (privacyModel.dirty || privacyModel.touched)}">
                     <div class="contactMeText">&nbsp;{{ 'CONTACTFORM.Read' | translate }}</div>
                     <div class="contactMeTextPrivacy themeColorFont">&nbsp;{{ 'CONTACTFORM.Policy' | translate }}</div>
                     <div class="contactMeTextData">&nbsp;{{ 'CONTACTFORM.Agree' | translate }}</div>

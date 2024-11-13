@@ -16,7 +16,7 @@ import { SectionService } from '../../services/section.service';
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormsModule, CheckboxModule, InputTextModule, FloatLabelModule, NgIf, InputTextareaModule, TranslateModule,
+  imports: [FormsModule, CheckboxModule, InputTextModule, FloatLabelModule, NgIf,NgClass, InputTextareaModule, TranslateModule,
     HttpClientModule,  ],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss'

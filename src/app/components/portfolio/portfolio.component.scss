@@ -332,13 +332,13 @@ display: none;
 
 
     .portfolioTechnologies {
-        width: 100vw;
+        width: 97vw;
         flex-direction: column;
         padding: 15px;
     }
 
     .portfolioTechnologiesJoin {
-        width: 100vw;
+        width: 97vw;
         flex-direction: column;
         padding: 15px;
     }
@@ -378,4 +378,14 @@ display: block;
 .mobileProject {
     display: none
 }
+
+.joinTechnologies {
+    flex-wrap: wrap;
 }
+
+.videoTechnologies {
+    flex-wrap: wrap;
+}
+
+}
+

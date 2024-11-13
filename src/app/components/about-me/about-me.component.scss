@@ -194,51 +194,10 @@
 }
 
 
+@media only screen and (max-width: 370px) { 
 
-// @media only screen and (max-width: 800px) and (max-height: 1000px) { 
-//     .aboutMeContainer {
-//         height: 110vh;
-//     }
+    .aboutMeContainer {
+        height: min(1072px, 355vw);
+    }
+  }
 
-// }
-
-
-// @media only screen and (max-width: 800px) and (max-height: 900px) { 
-//     .aboutMeContainer {
-//         height: 120vh;
-//     }
-
-// }
-
-
-// @media only screen and (max-width: 800px) and (max-height: 800px) { 
-//     .aboutMeContainer {
-//         height: 130vh;
-//     }
-
-// }
-
-
-
-// @media only screen and (max-width: 800px) and (max-height: 700px) { 
-//     .aboutMeContainer {
-//         height: 140vh;
-//     }
-
-// }
-
-
-// @media only screen and (max-width: 800px) and (max-height: 600px) { 
-//     .aboutMeContainer {
-//         height: 170vh;
-//     }
-
-// }
-
-
-// @media only screen and (max-width: 800px) and (max-height: 500px) { 
-//     .aboutMeContainer {
-//         height: 200vh;
-//     }
-
-// }

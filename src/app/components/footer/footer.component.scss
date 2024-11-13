@@ -90,10 +90,25 @@
     .footerContainer {
         display: flex;
         align-items: center;
+        height: 30vh;
+
     }
 
+    .footerContainer::before {
+        height: 30vh;
+    }
 
     .footerCopyright {
         text-align: center;
+    }
+
+
+    .footerMainContainer {
+        height: 30vh;
+
+    }
+
+    .footerLogoDevContainer {
+        height: 25vh;
     }
 }

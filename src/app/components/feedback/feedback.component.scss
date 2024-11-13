@@ -157,3 +157,14 @@
   }
 
 
+  @media only screen and (max-width: 370px) { 
+
+    .portfolioContainer {
+        height: min(2123px, 666vw);
+    }
+
+    .feedbackMainContainer {
+        height: 100vh;
+    }
+}
+
