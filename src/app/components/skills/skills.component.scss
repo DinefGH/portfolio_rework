@@ -255,7 +255,7 @@ display: block;
     
     .iconHover:hover .changeLogo {
         cursor: pointer;
-        transform: rotate(180deg); 
+        transform: translate(10px,0px);
         transition: transform 0.5s ease;
     }
 

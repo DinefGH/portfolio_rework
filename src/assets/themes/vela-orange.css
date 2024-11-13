@@ -27,6 +27,27 @@
     Fill: #FFD54F;
   }
 
+
+  .diagonalBox {
+    position: absolute;
+    top: 24px;
+    left: 24px; 
+    width: min(460px, 30vw);
+    height: 260px;
+    background-color: rgba(28, 28, 28,);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    background: repeating-linear-gradient(
+        225deg, 
+        #FFD54F, 
+        #FFD54F,
+        transparent 2px, 
+        transparent 20px 
+    );
+  }
+
+
   .diagonal-box { 
     background: repeating-linear-gradient(
       225deg, /* Adjust angle to make lines diagonal */

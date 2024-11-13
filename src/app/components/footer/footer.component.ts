@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
+import {TranslateModule } from '@ngx-translate/core'; 
 import { RouterModule, Router } from '@angular/router';
 
 
@@ -24,9 +24,8 @@ export class FooterComponent {
   }
 
 
-
   openLinkedIn(): void {
-    window.open("www.linkedin.com/in/fabian-dürr", "_blank");
+    window.open("https://linkedin.com/in/fabian-dürr", "_blank");
   }
 
 
@@ -38,4 +37,11 @@ export class FooterComponent {
   openImprint(): void {
     window.open('/imprint', '_blank');
   }
+
+
+  openFabian(): void  {
+    window.open("https://portfolio.fabianduerr.com", "_blank");
+  }
+
+
 }

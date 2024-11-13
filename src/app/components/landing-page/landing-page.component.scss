@@ -20,9 +20,6 @@
   }
 
 
-
-
-
 .hero {
   position: absolute;
   top: 45%;
@@ -35,11 +32,13 @@
     text-align: center;
 }
 
+
 .title {
   font-size: calc(1.175rem + 7.5vw) !important;
     font-weight: bold;
     width: 99vw;
 }
+
 
 .subtitle {
   font-size: calc(1.175rem + 2.5vw) !important;
@@ -55,12 +54,12 @@
 }
 
 
-/* Scroll hint */
 .scroll-hint {
     margin-top: 30px;
     font-size: 2rem;
     color: #00ffa3;
 }
+
 
 .bannerContainer {
   justify-content: center;
@@ -77,9 +76,10 @@
   z-index: 10;
 }
 
+
 .slideBanner {
   display: inline-flex;  
-  white-space: nowrap;  /* Prevent the text from wrapping */
+  white-space: nowrap;  
   animation: slide-banner 8s linear infinite; 
   justify-content: center;
   align-items: center;
@@ -88,15 +88,12 @@
 
 @keyframes slide-banner {
   0% {
-    transform: translateX(0);  /* Start at normal position */
+    transform: translateX(0);  
   }
   100% {
-    transform: translateX(-100%);  /* Move all the way left */
+    transform: translateX(-100%);  
   }
 }
-
-
-
 
 
 .point {
@@ -110,10 +107,11 @@
   border: 2px solid;
 }
 
+
 .animated-button button .p-button-label {
   display: inline-block;
-  white-space: nowrap; /* Prevent text from wrapping */
-  will-change: transform; /* Optimize performance for the transform animation */
+  white-space: nowrap; 
+  will-change: transform; 
 }
 
 
@@ -300,4 +298,38 @@
   .email {
     bottom: 70vh;
 }
+}
+
+
+.name {
+  display: inline-block;
+  overflow: hidden; 
+  white-space: nowrap; 
+  width: 0;
+  animation: typing 7s steps(70, end) forwards;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; 
+  }
+}
+
+
+.fullstack {
+  animation: opacity 4s steps(70, end) forwards;
+}
+
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
 }

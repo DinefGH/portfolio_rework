@@ -18,8 +18,8 @@ import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
 
 export class SkillsComponent implements OnInit {
 
-  frontendActive: boolean = true;
-  backendActive: boolean = false;
+  frontendActive: boolean = false;
+  backendActive: boolean = true;
 
 
   constructor(

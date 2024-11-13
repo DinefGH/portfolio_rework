@@ -1,6 +1,6 @@
 import { Component, ElementRef, Renderer2, AfterViewInit, Inject, PLATFORM_ID  } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { TranslateModule } from '@ngx-translate/core'; // Import TranslateModule
+import { TranslateModule } from '@ngx-translate/core'; 
 import { isPlatformBrowser } from '@angular/common';
 
 
@@ -22,7 +22,7 @@ export class LandingPageComponent implements AfterViewInit {
     const buttonLabel = this.el.nativeElement.querySelector('.p-button-label');
     
     if (buttonLabel) {
-      this.smoothLoopingText(buttonLabel, 0.3);  // Pass the constant step size here (e.g., 2px per frame)
+      this.smoothLoopingText(buttonLabel, 0.3); 
     }
   }
 
@@ -31,36 +31,34 @@ export class LandingPageComponent implements AfterViewInit {
     const textWidth = element.offsetWidth;
     const parentWidth = element.parentElement?.offsetWidth || 0;
 
-    const resetPosition = parentWidth + 100;  // Reset point just beyond the right edge
+    const resetPosition = parentWidth + 100;  
 
     const interval = setInterval(() => {
-      // Move the text to the left
-      position -= stepSize;  // This ensures the movement is by a constant number of pixels
       
-      // Hide the text when it's off the screen (to the left)
+      position -= stepSize;  
+      
       if (position < -textWidth -300) {
-        position = resetPosition; // Reset to right beyond the button
+        position = resetPosition; 
       }
 
-      // If the text is off-screen, hide it; if visible, show it
+      
       if (position < +100 && position > -textWidth -100) {
-        this.renderer.setStyle(element, 'visibility', 'visible'); // Show text when it's in view
+        this.renderer.setStyle(element, 'visibility', 'visible'); 
       } else {
         setTimeout(() => {
           this.renderer.setStyle(element, 'visibility', 'hidden');
         }, 400);
       }
 
-      // Apply the transform to move the text
+      
       this.renderer.setStyle(element, 'transform', `translateX(${position}px)`);
 
-    }, 1); // 60 FPS (16ms per frame)
+    }, 1); 
   }
 
 
   scrollToPortfolio() {
     if (isPlatformBrowser(this.platformId)) {
-      // Use setTimeout to ensure the event loop has time to render other components
       setTimeout(() => {
         const portfolioSection = document.getElementById('portfolio');
         if (portfolioSection) {
@@ -76,7 +74,6 @@ export class LandingPageComponent implements AfterViewInit {
 
   scrollToContact() {
     if (isPlatformBrowser(this.platformId)) {
-      // Use setTimeout to ensure the event loop has time to render other components
       setTimeout(() => {
         const contactMeSection = document.getElementById('contactMe');
         if (contactMeSection) {
@@ -87,4 +84,20 @@ export class LandingPageComponent implements AfterViewInit {
       }, 0);
     }
   }
+
+  openGitHub(): void {
+    window.open("https://github.com/DinefGH/", "_blank");
+  }
+
+
+
+  openLinkedIn(): void {
+    window.open("https://linkedin.com/in/fabian-dürr", "_blank");
+  }
+
+
+  openEmail(): void {
+    window.location.href = "mailto:fabianduerr@protonmail.de";
+  }
+
 }

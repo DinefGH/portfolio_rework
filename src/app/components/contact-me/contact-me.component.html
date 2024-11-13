@@ -110,7 +110,7 @@
                 <div class="contactMePrivacyContainer"
                 [ngClass]="{'errorHighlightPadding': !checkedPrivacy && (privacyModel.dirty || privacyModel.touched)}">
                     <div class="contactMeText">&nbsp;{{ 'CONTACTFORM.Read' | translate }}</div>
-                    <div class="contactMeTextPrivacy themeColorFont">&nbsp;{{ 'CONTACTFORM.Policy' | translate }}</div>
+                    <div (click)="openImprint()"  class="contactMeTextPrivacy themeColorFont">&nbsp;{{ 'CONTACTFORM.Policy' | translate }}</div>
                     <div class="contactMeTextData">&nbsp;{{ 'CONTACTFORM.Agree' | translate }}</div>
                 </div>
             </div>

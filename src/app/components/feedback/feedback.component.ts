@@ -12,7 +12,7 @@ interface Feedback {
 @Component({
   selector: 'app-feedback',
   standalone: true,
-  imports: [NgFor, NgClass, NgStyle, NgIf, TranslateModule],
+  imports: [NgFor, NgClass, TranslateModule],
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.scss'],
   animations: [
@@ -40,17 +40,13 @@ export class FeedbackComponent {
   ngOnInit(): void {
     this.updateFeedbacks();
 
-    // Update feedbacks on language change
+    
     this.translate.onLangChange.subscribe(() => {
       this.updateFeedbacks();
     });
   }
   
 
-
-  
-
-  // Helper modulo function to handle negative numbers
   private mod(n: number, m: number): number {
     return ((n % m) + m) % m;
   }
@@ -79,22 +75,21 @@ export class FeedbackComponent {
     const currentIndex = this.currentIndex;
     if (index === currentIndex) return;
   
-    // Determine the direction based on index difference
     const totalFeedbacks = this.feedbacks.length;
     let diff = index - currentIndex;
   
-    // Adjust diff for the shortest path
+    
     if (Math.abs(diff) > totalFeedbacks / 2) {
       diff = diff > 0 ? diff - totalFeedbacks : diff + totalFeedbacks;
     }
   
     if (diff > 0) {
-      // Move forward: decrement animationIndex
+      
       for (let i = 0; i < diff; i++) {
         this.animationIndex++;
       }
     } else {
-      // Move backward: increment animationIndex
+      
       for (let i = 0; i < -diff; i++) {
         this.animationIndex--;
       }

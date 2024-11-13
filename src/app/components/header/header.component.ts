@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
 import { ServiceThemeService } from '../../services/service-theme.service';
-import { ReplaceDashPipe } from '../../pipes/replace-dash.pipe'; // Import the custom pipe
-import { FormsModule } from '@angular/forms'; // Import FormsModule for ngModel
+import { ReplaceDashPipe } from '../../pipes/replace-dash.pipe'; 
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
-import { TranslateModule, TranslateService } from '@ngx-translate/core'; // Import TranslateService
+import { TranslateModule, TranslateService } from '@ngx-translate/core'; 
 import { SectionService } from '../../services/section.service';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ReplaceDashPipe, 
-    FormsModule, 
+  imports: [ 
     CommonModule,
     ButtonModule,
     TranslateModule
@@ -28,6 +26,7 @@ export class HeaderComponent {
 
   checked: boolean = false;
 
+  
   availableThemes: string[] = [
     'bootstrap4-light-blue',
     'bootstrap4-light-purple',
@@ -78,22 +77,25 @@ export class HeaderComponent {
     'rhea'
   ];
 
+
   activeSection: string = '';
   selectedTheme: string = 'luna-green';
   dropdownOpen: boolean = false;
   dropdownVisible:  boolean = false;
 
+
   constructor(private serviceThemeService: ServiceThemeService,
     private translate: TranslateService,
     private sectionService: SectionService
-
   ) {}
+
 
   ngOnInit() {
     this.sectionService.activeSection$.subscribe((sectionId) => {
       this.activeSection = sectionId;
     });
   }
+
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -103,14 +105,15 @@ export class HeaderComponent {
     this.dropdownVisible = !this.dropdownVisible;
   }
 
+
   selectLanguage(lang: string) {
     this.dropdownVisible = false;
     this.translate.use(lang); 
-
     console.log('Selected language:', lang);
     this.dropdownVisible = true;
     console.log('visible:', this.dropdownVisible);
   }
+
 
   toggleClassClose() {
     this.isActive = !this.isActive;
@@ -130,6 +133,7 @@ export class HeaderComponent {
     console.log('Current theme:', this.serviceThemeService.getCurrentTheme());
     this.dropdownOpen = false;
   }
+
 
   getThemeColor(theme: string): string {
     const themeColors: { [key: string]: string } = {
@@ -182,5 +186,10 @@ export class HeaderComponent {
       'rhea': '#7b95a3'
     };
     return themeColors[theme] || '#ffffff'; 
+  }
+
+
+  openFabian(): void  {
+    window.open("https://portfolio.fabianduerr.com", "_blank");
   }
 }

@@ -27,24 +27,45 @@
     Fill: #007bff;
   }
 
+
+  .diagonalBox {
+    position: absolute;
+    top: 24px;
+    left: 24px; 
+    width: min(460px, 30vw);
+    height: 260px;
+    background-color: rgba(28, 28, 28,);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    background: repeating-linear-gradient(
+        225deg, 
+        #007bff, 
+        #007bff,
+        transparent 2px, 
+        transparent 20px 
+    );
+  }
+
+
   .diagonal-box { 
     background: repeating-linear-gradient(
-      225deg, /* Adjust angle to make lines diagonal */
-      #007bff, /* Line color */
-      #007bff 2px, /* Line width */
-      transparent 2px, /* Spacing between lines */
-      transparent 20px /* Adjust for more/less spacing */
+      225deg, 
+      #007bff, 
+      #007bff 2px,
+      transparent 2px, 
+      transparent 20px 
       ) !important;
     }
 
 
     .diagonal-box::before { 
       background: repeating-linear-gradient(
-        225deg, /* Adjust angle to make lines diagonal */
-        #007bff, /* Line color */
-        #007bff 2px, /* Line width */
-        transparent 2px, /* Spacing between lines */
-        transparent 20px /* Adjust for more/less spacing */
+        225deg, 
+        #007bff,
+        #007bff 2px, 
+        transparent 2px,
+        transparent 20px 
         ) !important;
       }
 

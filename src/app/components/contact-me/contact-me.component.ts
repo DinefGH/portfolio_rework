@@ -45,7 +45,7 @@ export class ContactMeComponent {
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 } 
     );
 
     observer.observe(this.elementRef.nativeElement.querySelector('#contactMe'));
@@ -75,5 +75,9 @@ export class ContactMeComponent {
           alert('Failed to send email: ' + error.error);
         }
       );
+  }
+
+  openImprint(): void {
+    window.open('/imprint', '_blank');
   }
 }

@@ -28,7 +28,7 @@ export class AboutMeComponent implements OnInit {
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 } 
     );
 
     observer.observe(this.elementRef.nativeElement.querySelector('#about'));
