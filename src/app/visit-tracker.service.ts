@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { API_URL } from './api-url';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VisitTrackerService {
 
-  private apiUrl = 'http://localhost:8000/api/increment-visit/';  // Update with your backend URL
-
+  private apiUrl = API_URL;
+  
   constructor(private http: HttpClient) { }
 
   incrementVisit() {
