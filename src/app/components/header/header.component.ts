@@ -192,4 +192,11 @@ export class HeaderComponent {
   openFabian(): void  {
     window.open("https://portfolio.fabianduerr.com", "_blank");
   }
+
+
+close() {
+  this.isActive = true;
+  console.log(this.isActive)
+
+}
 }

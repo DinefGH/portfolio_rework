@@ -115,8 +115,8 @@
       </svg>
   </div>
 
-  <div class="headerLinks themeColorFontHover">
-    <a
+  <div (click)="close()"  class="headerLinks themeColorFontHover">
+    <a 
     href="#about"
     class="headerLinks  themeColorFontHover"
     [class.active]="activeSection === 'about'"
@@ -126,7 +126,7 @@
   </div>
   
   
-  <div class="headerLinks themeColorFontHover">
+  <div  (click)="close()" class="headerLinks themeColorFontHover">
     <a
     href="#skills"
     class="headerLinks  themeColorFontHover"
@@ -138,7 +138,7 @@
   
   
   
-  <div class="headerLinks themeColorFontHover">
+  <div (click)="close()"  class="headerLinks themeColorFontHover">
     <a
     href="#portfolio"
     class="headerLinks  themeColorFontHover"
@@ -150,11 +150,12 @@
   
   
   
-  <div class="headerLinks themeColorFontHover">
+  <div  class="headerLinks themeColorFontHover">
     <a
     href="#contactMe"
     class="headerLinks  themeColorFontHover"
     [class.active]="activeSection === 'contactMe'"
+    (click)="close()"
   >
     {{ 'HEADER.Contact' | translate }}
   </a>
