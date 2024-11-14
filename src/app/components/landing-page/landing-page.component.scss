@@ -118,15 +118,15 @@
 .animatedButton {
   margin: 16px;
     position: relative;
-    overflow: hidden;  /* Hide the text when it moves out of the button */
-    width: 125px;  /* Adjust the button width as per your design */
-    height: 36px;  /* Adjust the button height as per your design */
-    display: flex;  /* Flexbox for centering */
-  justify-content: center;  /* Center horizontally */
-  align-items: center;  /* Center vertically */
-  overflow: hidden;  /* Hide the text when it moves out of the button */
-  background-color: rgba(0, 0, 0, 0);  /* Example button background color */
-  color: white;  /* Example button text color */
+    overflow: hidden;   
+    width: 125px;   
+    height: 36px;   
+    display: flex;   
+  justify-content: center;   
+  align-items: center;   
+  overflow: hidden;   
+  background-color: rgba(0, 0, 0, 0);   
+  color: white;   
 
   cursor: pointer;
 

@@ -39,33 +39,56 @@
     overflow: hidden;
     z-index: 1;
     background: repeating-linear-gradient(
-        225deg, /* Adjust angle to make lines diagonal */
-        #BA68C8, /* Line color */
-        #BA68C8, /* Line width */
-        transparent 2px, /* Spacing between lines */
-        transparent 20px /* Adjust for more/less spacing */
+        225deg,  
+        #BA68C8,  
+        #BA68C8,  
+        transparent 2px,  
+        transparent 20px  
     );
   }
 
 
+  .diagonalBox::before { 
+    background: repeating-linear-gradient(
+      225deg, 
+      #BA68C8, 
+      #BA68C8 2px, 
+      transparent 2px, 
+      transparent 20px 
+      ) !important;
+    }
+
+
+  .diagonal-box::before { 
+    background: repeating-linear-gradient(
+      225deg,  
+      #BA68C8,  
+      #BA68C8 2px,  
+      transparent 2px,  
+      transparent 20px  
+      ) !important;
+    }
+
+
+
   .diagonal-box { 
     background: repeating-linear-gradient(
-      225deg, /* Adjust angle to make lines diagonal */
-      #BA68C8, /* Line color */
-      #BA68C8 2px, /* Line width */
-      transparent 2px, /* Spacing between lines */
-      transparent 20px /* Adjust for more/less spacing */
+      225deg,  
+      #BA68C8,  
+      #BA68C8 2px,  
+      transparent 2px,  
+      transparent 20px  
       ) !important;
     }
 
 
     .diagonal-box::before { 
       background: repeating-linear-gradient(
-        225deg, /* Adjust angle to make lines diagonal */
-        #BA68C8, /* Line color */
-        #BA68C8 2px, /* Line width */
-        transparent 2px, /* Spacing between lines */
-        transparent 20px /* Adjust for more/less spacing */
+        225deg,  
+        #BA68C8,  
+        #BA68C8 2px,  
+        transparent 2px,  
+        transparent 20px  
         ) !important;
       }
 

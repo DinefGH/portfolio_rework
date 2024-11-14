@@ -44,8 +44,20 @@
         #5472d4,
         transparent 2px, 
         transparent 20px 
-    );
+    )!important;
   }
+
+
+
+  .diagonalBox::before { 
+    background: repeating-linear-gradient(
+      225deg, 
+      #5472d4, 
+      #5472d4 2px, 
+      transparent 2px, 
+      transparent 20px 
+      ) !important;
+    }
 
 
   .diagonal-box { 

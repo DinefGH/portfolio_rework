@@ -45,28 +45,39 @@
         #CE93D8,
         transparent 2px, 
         transparent 20px 
-    );
+    )!important;
   }
+
+
+  .diagonalBox::before { 
+    background: repeating-linear-gradient(
+      225deg, 
+      #CE93D8, 
+      #CE93D8 2px, 
+      transparent 2px, 
+      transparent 20px 
+      ) !important;
+    }
 
 
   .diagonal-box { 
     background: repeating-linear-gradient(
-      225deg, /* Adjust angle to make lines diagonal */
-      #CE93D8, /* Line color */
-      #CE93D8 2px, /* Line width */
-      transparent 2px, /* Spacing between lines */
-      transparent 20px /* Adjust for more/less spacing */
+      225deg,  
+      #CE93D8,  
+      #CE93D8 2px,  
+      transparent 2px,  
+      transparent 20px  
       ) !important;
     }
 
 
     .diagonal-box::before { 
       background: repeating-linear-gradient(
-        225deg, /* Adjust angle to make lines diagonal */
-        #CE93D8, /* Line color */
-        #CE93D8 2px, /* Line width */
-        transparent 2px, /* Spacing between lines */
-        transparent 20px /* Adjust for more/less spacing */
+        225deg,  
+        #CE93D8,  
+        #CE93D8 2px,  
+        transparent 2px,  
+        transparent 20px  
         ) !important;
       }
 
