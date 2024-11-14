@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
@@ -15,6 +15,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FooterComponent } from './components/footer/footer.component';
 import { Router } from '@angular/router';
 import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { VisitTrackerService } from './visit-tracker.service';
+
 
 
 
@@ -37,17 +40,18 @@ import { NgFor, NgClass, NgStyle, NgIf } from '@angular/common';
     ContactMeComponent,
     FooterComponent,
     TranslateModule,
-     NgIf 
+     NgIf ,
+     HttpClientModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio-frontend';
   value: string | undefined;
   isImprintPage = false;
 
-  constructor(private translate: TranslateService, private router: Router) {
+  constructor(private translate: TranslateService, private router: Router, private visitTrackerService: VisitTrackerService) {
     // Set default language
     this.translate.setDefaultLang('en');
 
@@ -59,6 +63,18 @@ export class AppComponent {
     this.router.events.subscribe(() => {
       this.isImprintPage = this.router.url === '/imprint';
     });
+  }
+
+
+  ngOnInit(): void {
+    this.visitTrackerService.incrementVisit().subscribe(
+      (response) => {
+        console.log('Visit count incremented successfully.');
+      },
+      (error) => {
+        console.error('Error incrementing visit count:', error);
+      }
+    );
   }
   }
 
