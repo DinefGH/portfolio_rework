@@ -40,7 +40,7 @@ export class FooterComponent {
 
 
   openFabian(): void  {
-    window.open("https://portfolio.fabianduerr.com", "_blank");
+    window.open("https://fabianduerr.com", "_blank");
   }
 
 

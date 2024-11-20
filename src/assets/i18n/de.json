@@ -39,7 +39,7 @@
     "PORTFOLIO": {
         "Projects": "Ausgewählte Projekte",
         "ExploreProjects": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
-        "VideoPortfolio": "Videoportfolio ist eine Videoplattform zur Präsentation von Projekten. Videogular dient dabei als Videoplayer. Für das Testing kamen Jasmine und Cypress zum Einsatz. Tools zur Dokumentation des Frontends und Backends kamen ebenfalls zum Einsatz. PostgreSQL agiert als zuverlässige Datenbanklösung im Hintergrund.",
+        "VideoPortfolio": "Videoflix ist eine Videoplattform zur Präsentation von Videos. Videogular dient dabei als Videoplayer. Für das Testing kamen Jasmine und Cypress zum Einsatz. Tools zur Dokumentation des Frontends und Backends kamen ebenfalls zum Einsatz. PostgreSQL agiert als zuverlässige Datenbanklösung im Hintergrund.",
         "Join": "Join ist ein Kanban-basiertes Projektmanagement-Tool mit Funktionen wie Login und Registrierung, einem Kontaktbuch und der Möglichkeit, Aufgaben zu erstellen. Zum Testen wurden Jasmine und Cypress verwendet, außerdem wurden Tools für die Dokumentation des Frontends und des Backends verwendet. SQLite fungiert als zuverlässige Datenbanklösung im Hintergrund.",
         "ElPolloLoco": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen."
     },
