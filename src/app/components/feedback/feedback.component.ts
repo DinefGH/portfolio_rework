@@ -101,7 +101,7 @@ export class FeedbackComponent {
     this.feedbacks = [
       { content: this.translate.instant('FEEDBACK.Feedback1'), author: "Former Employer" },
       { content: this.translate.instant('FEEDBACK.Feedback2'), author: "Former Employer" },
-      { content: this.translate.instant('FEEDBACK.Feedback3'), author: "Group member" },
+      { content: this.translate.instant('FEEDBACK.Feedback3'), author: "Fellow Student" },
     ];
   }
 }
