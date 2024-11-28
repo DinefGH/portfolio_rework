@@ -89,6 +89,12 @@ margin-bottom: 32px;
     color: black;
 }
 
+
+
+.colorB {
+    color: black;
+}
+
 .videoName {
     font-size: 1.5rem;
     color: #ffffff;
@@ -226,6 +232,72 @@ display: none;
 }
 
 
+.portfolioTechnologiesJoin:hover .joinName {
+color: black !important;
+}
+
+.portfolioTechnologiesJoin:hover .joinTechnologies   {
+    color: black !important;
+    }
+
+
+.portfolioTechnologiesJoin:hover .projectDescription {
+    color: black !important;
+    }
+
+.portfolioTechnologiesJoin:hover .ColorButton {
+    border-color: #000000;
+    color: #000000;
+    }
+
+
+
+    
+.portfolioTechnologies:hover .elPolloName {
+    color: black !important;
+    }
+        
+        
+.portfolioTechnologies:hover .elPolloTechnologies   {
+    color: black !important;
+    }
+        
+        
+.portfolioTechnologies:hover .projectDescription {
+    color: black !important;
+    }
+        
+.portfolioTechnologies:hover .ColorButton {
+    border-color: #000000;
+    color: #000000;
+    }
+        
+        
+
+.portfolioTechnologies:hover .videoName {
+    color: black !important;
+    }
+            
+            
+.portfolioTechnologies:hover .videoTechnologies   {
+    color: black !important;
+    }
+            
+            
+.portfolioTechnologies:hover .videoDescription {
+    color: black !important;
+    }
+            
+.portfolioTechnologies:hover .ColorButton {
+    border-color: #000000;
+    color: #000000;
+    }
+
+
+
+
+
+
 .projectContainerVideoportfolioMobile {
     display: none;
 
@@ -263,15 +335,15 @@ display: none;
         white-space: nowrap;  
         will-change: transform;  
     }
-      
-      
-      .animatedButton {
+    
+    
+    .animatedButton {
         margin: 16px;
         position: relative;
-          overflow: hidden;   
-          width: 125px;   
-          height: 36px;   
-          display: flex;   
+        overflow: hidden;   
+        width: 125px;   
+        height: 36px;   
+        display: flex;   
         justify-content: center;   
         align-items: center;   
         overflow: hidden;   

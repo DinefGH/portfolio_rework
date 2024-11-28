@@ -176,8 +176,18 @@ margin-bottom: 16px;
 }
 
 
-.growthHover:hover  .interests{
-display: block;
+.growthHover .interests {
+    opacity: 0; 
+    transform: scale(0.1); 
+    visibility: hidden; 
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out; /* Visibility transition delayed */
+}
+
+.growthHover:hover .interests {
+    opacity: 1; 
+    transform: scale(1); 
+    visibility: visible; 
+    transition: transform 0.5s ease-in-out, opacity 1s ease-in-out; /* Ensure visibility updates immediately */
 }
 
 
@@ -189,7 +199,6 @@ display: block;
     border: 1px solid;
     border-radius: 2rem;
     bottom: 80px;
-    display: none;
 }
 
 

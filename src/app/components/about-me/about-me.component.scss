@@ -48,8 +48,13 @@
 }
 
 
+.aboutImgShadowContainer .diagonal-box {
+    transition: transform 0.2s ease-in-out; 
+}
+
 .aboutImgShadowContainer:hover  .diagonal-box {
     transform: translate(-64px, 64px);
+    transform: opacity(100%);
 }
 
 

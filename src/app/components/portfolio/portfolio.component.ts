@@ -37,10 +37,9 @@ export class PortfolioComponent implements OnInit {
   }
 
   isHovered = false;
-
   isHoveredVideo = false;
-
   isHoveredJoin = false;
+
 
   onHover(state: boolean) {
     this.isHovered = state;
@@ -57,7 +56,6 @@ export class PortfolioComponent implements OnInit {
   }
 
 
-
   openLiveTestVideo(): void {
     window.open("https://videoflix.fabianduerr.com/", "_blank");
   }
@@ -68,12 +66,22 @@ export class PortfolioComponent implements OnInit {
   }
 
 
+  openGitHubVideoBackend(): void {
+    window.open("https://github.com/DinefGH/videoflix_django", "_blank");
+  }
+
+
   openLiveTestJoin(): void {
     window.open("https://join.fabianduerr.com/", "_blank");
   }
 
 
   openGitHubJoin(): void {
+    window.open("https://github.com/DinefGH/join_angular", "_blank");
+  }
+
+
+  openGitHubJoinBackend(): void {
     window.open("https://github.com/DinefGH/join_angular", "_blank");
   }
 

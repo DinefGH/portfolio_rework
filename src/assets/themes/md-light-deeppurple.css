@@ -2,8 +2,8 @@
 
 
   .themeColorButton:hover {
-    border-color: #673AB7;
-    color: #673AB7;
+    border-color: #673AB7!important;
+    color: #673AB7!important;
   }
 
 

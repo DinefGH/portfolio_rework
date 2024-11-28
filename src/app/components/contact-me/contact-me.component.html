@@ -62,7 +62,7 @@
                             <small id="email-help" *ngIf="emailModel.invalid && (emailModel.dirty || emailModel.touched)" class="error-text">
                                 <span class="errorSmall"  *ngIf="emailModel.errors?.['required']">{{ 'CONTACTFORM.ErrorEmail' | translate }}</span>
                                 <span class="errorSmall"  *ngIf="emailModel.errors?.['email']">{{ 'CONTACTFORM.ErrorEmailValid' | translate }}</span>
-                              </small>
+                            </small>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
     />
     <small *ngIf="!checkedPrivacy && (privacyModel.dirty || privacyModel.touched)" class="error-text">
         <span  class="errorSmall" >{{ 'CONTACTFORM.ErrorPivacy' | translate }}</span>
-      </small>
+    </small>
                 </div>
                 <div class="contactMePrivacyContainer"
                 [ngClass]="{'errorHighlightPadding': !checkedPrivacy && (privacyModel.dirty || privacyModel.touched)}">

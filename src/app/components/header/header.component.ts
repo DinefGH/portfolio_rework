@@ -20,7 +20,6 @@ import { SectionService } from '../../services/section.service';
 })
 export class HeaderComponent {
 
-
   isActive: boolean = true;
 
 
@@ -81,6 +80,8 @@ export class HeaderComponent {
   activeSection: string = '';
   selectedTheme: string = 'luna-green';
   dropdownOpen: boolean = false;
+  dropdownOpenHover: boolean = false;
+  dropdownOpenHoverLanguage: boolean = false;
   dropdownVisible:  boolean = false;
 
 
@@ -190,7 +191,7 @@ export class HeaderComponent {
 
 
   openFabian(): void  {
-    window.open("https://portfolio.fabianduerr.com", "_blank");
+    window.open("https://fabianduerr.com", "_blank");
   }
 
 
