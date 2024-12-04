@@ -19,6 +19,10 @@
 }
 
 
+.d-none {
+    display: none;
+}
+
 .whoAmI {
     font-size: 1.5rem;
     margin-bottom: 16px;
@@ -26,9 +30,9 @@
 
 
 .photo {
-    height: 660px;
+    height: auto;
     width: min(660px, 35vw);
-    object-fit: contain;
+    filter: grayscale(100%);
 }
 
 
@@ -37,6 +41,9 @@
     top: 64px;
     left: 128px; 
     z-index: 10;
+    -webkit-box-shadow: 0px 0px 15px 5px #39514d; 
+box-shadow: 0px 0px 15px 5px #39514d;
+border-radius: 20px;
 }
 
 
@@ -110,7 +117,7 @@
         top: 0px;
         left: 0px; 
         width: min(660px, 35vw);
-        height: 660px;
+        height: 100%;
         background-color: rgba(28, 28, 28,);
         border-radius: 20px;
         overflow: hidden;
@@ -150,50 +157,91 @@
 }
 
 
+@media only screen and (max-width: 1100px) { 
+
+
+
+    .aboutMeMainContainerMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whoAmIMobile {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        }
+
+        .diagonal-box {
+            display: none;
+        }
+
+
+        .aboutMeMainContainer {
+            display: none;
+            justify-content: center;
+        }
+
+
+        .photo {
+            width: min(660px, 80vw);
+        }
+    
+    
+    
+    
+    
+    
+    
+        .aboutMeWhoContainer {
+            right: auto;
+            width: min(660px, 90vw);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            bottom: -60vh;
+    
+    }
+    
+    .meContainer {
+        width: min(660px, 90vw);
+    }
+    
+    
+    .meContainer[_ngcontent-ng-c1901136293] {
+    
+        padding: 24px;
+    }
+    
+    
+    .aboutImgShadowContainer {
+        top: 64px;
+        left: auto;
+    }
+    
+    
+    
+    
+    .aboutMeContainer {
+        height: min(1200px, 340vw);
+        padding: 24px;
+    }
+    
+        
+}
 
 
 @media only screen and (max-width: 800px) { 
 
-    .photo {
-        height: 30vh;
-    }
-
-
-    .diagonal-box {
-        height: 30vh;
-    }
 
 
 
-    .aboutMeWhoContainer {
-        right: auto;
-        width: min(660px, 95vw);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 35vh;
-
-}
-
-.meContainer {
-    width: min(660px, 95vw);
-}
 
 
-.aboutImgShadowContainer {
-    top: 0px;
-}
 
 
-.aboutMeMainContainer {
-
-    justify-content: center;
-}
-
-
-.aboutMeContainer {
-    height: min(1032px, 337vw);
-}
 
 
 }
@@ -202,7 +250,14 @@
 @media only screen and (max-width: 370px) { 
 
     .aboutMeContainer {
-        height: min(1072px, 355vw);
+        height: min(1275px, 415vw);
     }
+
+
+    .aboutMeWhoContainer {
+
+        bottom: -16vh;
+
+}
   }
 

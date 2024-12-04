@@ -139,34 +139,11 @@
     p {
         display: inline-block;
         white-space: nowrap;
-        transform: translateX(0);  /* Start in the middle */
-        animation: none;  /* No animation by default */
-    }
-  
-    &:hover p {
-      animation: slide-text 5s linear infinite;  /* Trigger the animation on hover */
-
-
+        animation: none;  
     }
   }
   
 
-
-  @keyframes slide-text {
-    0% {
-      transform: translateX(0);  /* Start from the center */
-    }
-    50% {
-      transform: translateX(-200%);  /* Move off-screen to the left */
-    }
-    50.1% {
-      transform: translateX(200%);  /* Jump to the right off-screen immediately after leaving left */
-    }
-    100% {
-        transform: translateX(0);  /* Move back to the center */
-      }
-  }
-  
 
   .email {
     transform: rotate(270deg); 

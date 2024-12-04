@@ -32,7 +32,6 @@ import { VisitTrackerService } from './visit-tracker.service';
     ButtonModule,
     HeaderComponent,
     LandingPageComponent,
-    MainComponent,
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,
@@ -69,7 +68,6 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.visitTrackerService.incrementVisit().subscribe(
       (response) => {
-        console.log('Visit count incremented successfully.');
       },
       (error) => {
         console.error('Error incrementing visit count:', error);

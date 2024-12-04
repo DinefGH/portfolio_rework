@@ -29,9 +29,16 @@ margin-bottom: 32px;
 
 .descriptionPortfolio {
     margin-bottom: 32px;
+    width: 90vw;
     color: #ffffff;
 }
 
+
+.headlinesPortfolioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .portfolioTechnologies {
     border-top: 2px solid;
@@ -350,50 +357,33 @@ color: black !important;
         background-color: rgba(0, 0, 0, 0);   
         color: white;   
         cursor: pointer;
-        border: 1px solid;
+        border: 2px solid;
         border-radius: 2rem;
         transition: color 0.5s ease, border-color 0.5s ease,;  
-      
-      
-      
-          p {
-              display: inline-block;
-              white-space: nowrap;
-              transform: translateX(0);  
-              animation: none;  
-          }
-        
-          &:hover p {
-            animation: slide-text 5s linear infinite;  
-      
-      
-          }
-        }
-        
-      
-      
-        @keyframes slide-text {
-          0% {
-            transform: translateX(0); 
-          }
-          50% {
-            transform: translateX(-200%);  
-          }
-          50.1% {
-            transform: translateX(200%); 
-          }
-          100% {
-              transform: translateX(0);  
-            }
-        }
 
+
+        p {
+            display: inline-block;
+            white-space: nowrap;
+            transform: translate(0);  
+            animation: none;  
+        }
+        
+        }
+        
+
+    
+
+    .animatedButton:hover {
+        transform: scale(1.1);
+    }
 
 
 @media only screen and (max-width: 1100px) { 
 
     
     .portfolioContainer {
-        height: min(2106px, 581vw);
+        height: min(1733px, 400vw);
     }
 
 
@@ -427,7 +417,8 @@ color: black !important;
 
 
 .projectContainerElPolloMobile {
-display: block;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -439,12 +430,14 @@ display: block;
 
 
 .projectContainerVideoportfolioMobile {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 
 .projectContainerJoinMobile {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .mobileProject {
@@ -460,4 +453,45 @@ display: block;
 }
 
 }
+
+
+@media only screen and (max-width: 450px) { 
+
+    .portfolioContainer {
+        height: min(1761px, 546vw);
+    }
+
+    .portfolioTechnologiesJoin {
+        width: 94vw;
+    }
+
+
+    .portfolioTechnologies {
+        width: 94vw;
+
+    }
+
+
+
+    .animatedButton {
+        margin: 16px 3px 0px 3px;
+}
+
+.photoProject {
+    width: min(460px, 90vw);
+}
+
+
+
+.feedbackHeadline{
+    font-size: calc(1.175rem + 1.2vw) !important;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+}
+}
+
+
+
 

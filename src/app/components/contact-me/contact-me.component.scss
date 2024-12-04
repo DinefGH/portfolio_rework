@@ -1,7 +1,8 @@
 input, textarea {
     background-color: rgba(28, 28, 28,); 
-    border-color: rgba(28, 28, 28,);
     width: 35vw !important;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 
@@ -46,6 +47,10 @@ input, textarea {
     margin-bottom: 16px;
 }
 
+.d-none {
+    display: none;
+}
+
 
 .contactMeSmallHeadline {
     font-size: 1.5rem;
@@ -61,6 +66,11 @@ input, textarea {
 
 .contactMeTextPrivacy {
     cursor: pointer;
+    font-style: italic;
+}
+
+.contactMeTextPrivacy:hover {
+    transform: scale(1.05);
 }
 
 
@@ -199,28 +209,12 @@ input, textarea {
           animation: none;  
       }
     
-      &:hover p {
-        animation: slide-text 5s linear infinite; 
-  
-  
-      }
     }
     
-  
-  
-    @keyframes slide-text {
-      0% {
-        transform: translateX(0);  
-      }
-      50% {
-        transform: translateX(-200%);  
-      }
-      50.1% {
-        transform: translateX(200%);  
-      }
-      100% {
-          transform: translateX(0);  
-        }
+
+
+    .animatedButton:hover {
+        transform: scale(1.1);
     }
 
 
@@ -307,14 +301,37 @@ button:disabled {
   }
 
 
+  @media only screen and (max-width: 450px) { 
+
+    
+
+    .ContactMeCheckboxTextContainer {
+        position: absolute;
+        left: 56%;
+        transform: translateX(-50%);
+    }
+    
+
+    .animatedButton {
+        margin: 85px;
+    }
+
+
+    
+  }
+
+
   @media only screen and (max-width: 370px) { 
 
     .contactMeContainer {
-        height: min(1186px, 367vw);
+
+        height: min(1189px, 326vw);
     }
 
 
-    .contactMeContainer::before  {
-        height: min(1186px, 367vw);
+    .contactMeContainer::before {
+        height: min(1215px, 335vw);
     }
+
+    
   }

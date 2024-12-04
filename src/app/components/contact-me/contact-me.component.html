@@ -14,7 +14,6 @@
         </div>
 
         <div class="contactMeInputContainer">
-            <div class="contactmeLine themeBorderColor"></div>
 
             <form #contactForm="ngForm" (ngSubmit)="sendMail(contactForm)" novalidate>
             <div  class="contactMeNameContainer">
@@ -40,7 +39,6 @@
                     </div>
                 </div>
             </div>
-            <div class="contactmeLine themeBorderColor"></div>
             <div class="contactMeEmailContainer">
                 <div class="contactMeEmailHeadline themeColorFont">{{ 'CONTACTFORM.WhatEmail' | translate }}</div>
                 <div class="contactMeEmailInput">
@@ -66,7 +64,6 @@
                     </div>
                 </div>
             </div>
-            <div class="contactmeLine themeBorderColor"></div>
             <div class="contactMeTextContainer">
                 <div class="contactMeTextHeadline themeColorFont">{{ 'CONTACTFORM.WhatMessage' | translate }}</div>
                 <div class="contactMeTextInput">
@@ -91,7 +88,6 @@
                     </div>
                 </div>
             </div>
-            <div class="contactmeLine themeBorderColor"></div>
             <div>
                 <div class="ContactMeCheckboxTextContainer"
                 [ngClass]="{'errorHighlight': !checkedPrivacy && (privacyModel.dirty || privacyModel.touched)}">

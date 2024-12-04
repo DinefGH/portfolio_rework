@@ -89,8 +89,6 @@
 
 
     .footerContainer {
-        display: flex;
-        align-items: center;
         height: 30vh;
 
     }
@@ -106,10 +104,20 @@
 
     .footerMainContainer {
         height: 30vh;
-
+        align-items: flex-end;
+        margin-bottom: 36px;
     }
 
     .footerLogoDevContainer {
         height: 25vh;
+    }
+
+    .footerLinkContainer {
+        margin-bottom: 26px;
+    }
+
+
+    .footerCopyright {
+        margin-bottom: 44px;
     }
 }

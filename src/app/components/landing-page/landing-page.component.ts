@@ -63,7 +63,6 @@ export class LandingPageComponent implements AfterViewInit {
         const portfolioSection = document.getElementById('portfolio');
         if (portfolioSection) {
           portfolioSection.scrollIntoView({ behavior: 'smooth' });
-          console.log('scroll to Portfolio')
         } else {
           console.warn('Portfolio section not found');
         }

@@ -152,7 +152,10 @@
 
 
     .feedbackMainContainer {
-        height: 70vh;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 
@@ -166,14 +169,42 @@
   }
 
 
-  @media only screen and (max-width: 370px) { 
+  @media only screen and (max-width: 450px) { 
 
-    .portfolioContainer {
-        height: min(2123px, 666vw);
+    .feedbackContainer {
+        height: 750px;    }
+
+
+    .feedbackContainer::before {
+        height: 750px;    }
+
+
+
+
+
+     .feedbackHeadline {
+
+        display: flex;
+justify-content: center;
+width: 80vw;
     }
 
-    .feedbackMainContainer {
-        height: 100vh;
+}
+
+
+
+
+@media only screen and (max-width: 370px) { 
+
+    .feedbackContainer {
+        height: 750px;
     }
+
+
+    .feedbackContainer::before {
+        height: 750px;    }
+
+
+
 }
 
