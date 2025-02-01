@@ -82,7 +82,7 @@ export class PortfolioComponent implements OnInit {
 
 
   openGitHubJoinBackend(): void {
-    window.open("https://github.com/DinefGH/join_angular", "_blank");
+    window.open("https://github.com/DinefGH/join_django", "_blank");
   }
 
   
