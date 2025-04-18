@@ -66,13 +66,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.visitTrackerService.incrementVisit().subscribe(
-      (response) => {
-      },
-      (error) => {
-        console.error('Error incrementing visit count:', error);
-      }
-    );
+ 
   }
   }
 
